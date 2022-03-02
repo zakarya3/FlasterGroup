@@ -47,33 +47,33 @@ Route::middleware(['auth', 'isAdmin'])->group(function () {
     Route::put('update-type/{id}', [TypeController::class,'update']);
     Route::get('delete-type/{id}', [TypeController::class,'destroy']);
 
-    // Route::get('products', [ProductController::class,'index']);
-    // Route::post('insert-product', [ProductController::class,'insert']);
-    // Route::get('edit-prd/{id}', [ProductController::class,'edit']);
-    // Route::get('delete-prd/{id}', [ProductController::class,'destroy']);
-    // Route::put('update-product/{id}',[ProductController::class,'update'] );
+    Route::get('products', [ProductController::class,'index']);
+    Route::post('insert-product', [ProductController::class,'insert']);
+    Route::get('edit-prd/{id}', [ProductController::class,'edit']);
+    Route::get('delete-prd/{id}', [ProductController::class,'destroy']);
+    Route::put('update-product/{id}',[ProductController::class,'update'] );
     
-    // Route::get('brands', 'Admin\BrandController@index');
-    // Route::post('insert-brand', 'Admin\BrandController@insert');
-    // Route::get('edit-brand/{id}', [BrandController::class,'edit']);
-    // Route::put('update-brand/{id}', [BrandController::class,'update']);
-    // Route::get('delete-brand/{id}', [BrandController::class,'destroy']);
+    Route::get('brands', [BrandController::class, 'index']);
+    Route::post('insert-brand', [BrandController::class,'insert']);
+    Route::get('edit-brand/{id}', [BrandController::class,'edit']);
+    Route::put('update-brand/{id}', [BrandController::class,'update']);
+    Route::get('delete-brand/{id}', [BrandController::class,'destroy']);
 
-    // Route::get('reference', [RefController::class,'index']);
-    // Route::post('insert-reference', [RefController::class,'insert']);
-    // Route::get('edit-ref/{id}', [RefController::class,'edit']);
-    // Route::get('delete-ref/{id}', [RefController::class,'destroy']);
-    // Route::put('update-reference/{id}',[RefController::class,'update'] );
+    Route::get('reference', [RefController::class,'index']);
+    Route::post('insert-reference', [RefController::class,'insert']);
+    Route::get('edit-ref/{id}', [RefController::class,'edit']);
+    Route::get('delete-ref/{id}', [RefController::class,'destroy']);
+    Route::put('update-reference/{id}',[RefController::class,'update'] );
 
-    // Route::get('orders', [OrderController::class, 'index']);
-    // Route::get('admin/view-order/{id}', [OrderController::class, 'view']);
-    // Route::put('update-order/{id}', [OrderController::class, 'updateorder']);
-    // Route::get('order-history', [OrderController::class, 'orderhistory']);
+    Route::get('orders', [OrderController::class, 'index']);
+    Route::get('admin/view-order/{id}', [OrderController::class, 'view']);
+    Route::put('update-order/{id}', [OrderController::class, 'updateorder']);
+    Route::get('order-history', [OrderController::class, 'orderhistory']);
 
-    // Route::get('users', [UsersController::class, 'index']);
-    // Route::get('edit-usr/{id}', [UsersController::class, 'edit']);
-    // Route::put('update-user/{id}', [UsersController::class, 'update']);
-    // Route::get('delete-usr/{id}', [UsersController::class, 'destroy']);
+    Route::get('users', [UsersController::class, 'index']);
+    Route::get('edit-usr/{id}', [UsersController::class, 'edit']);
+    Route::put('update-user/{id}', [UsersController::class, 'update']);
+    Route::get('delete-usr/{id}', [UsersController::class, 'destroy']);
 
 
 

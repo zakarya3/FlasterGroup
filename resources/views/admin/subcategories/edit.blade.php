@@ -17,7 +17,7 @@
                       <label for="">Categorie</label>
                       <select class="form-select" required  name="categ">
                           <option value="">select a category</option>
-                          @foreach ($category as $item)
+                          @foreach ($categorie as $item)
                           <option value="{{ $item->id }}">{{ $item->name }}</option>
                           @endforeach
                       </select>

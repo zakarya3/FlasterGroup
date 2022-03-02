@@ -61,7 +61,7 @@
                     <div class="col-md-12">
                       <div class="input-group mb-3">
                         @if ($products->image)
-                        <img src="{{ asset('assets/uploads/products/images/'.$products->image) }}" alt="">
+                        <img src="{{ asset('assets/uploads/products/images/'.$products->image) }}" style="width: 100%" alt="">
                         @endif
                         <label class="input-group-text" for="image">Image</label>
                         <input type="file"  name="image" class="form-control" id="image">
