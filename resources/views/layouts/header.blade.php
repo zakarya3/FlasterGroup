@@ -237,7 +237,9 @@
 			<div class="container">
 				<div class="d-md-flex justify-content-between align-items-center py-3 text-center text-md-start">
 					<!-- copyright text -->
-					<div class="copyright-text">©2021 All Rights Reserved by <a href="#!"> Flaster Groupe.</a></div>
+					<div class="copyright-text">©        <script>
+						document.write(new Date().getFullYear())
+					  </script> All Rights Reserved by <a href="#!"> Flaster Groupe.</a></div>
 					<!-- copyright links-->
 					<div class="copyright-links primary-hover mt-3 mt-md-0">
 						<ul class="list-inline">
