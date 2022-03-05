@@ -46,6 +46,7 @@
                             <tr>
                                 <th>ID</th>
                                 <th>Nom de la brand</th>
+                                <th>Logo</th>
                               </tr>
                             </thead>
                             <tbody>
@@ -53,6 +54,9 @@
                                 <tr>
                                   <td>{{ $item->id }}</td>
                                   <td>{{ $item->brand_name }}</td>
+                                  <td>
+                                    <img src="{{ asset('assets/uploads/brands/images/'.$item->image) }}" class="cate-image" style="width: 40%"alt="image here">
+                                  </td>
                                   <td>
                                     @if (Auth::user()->role_as == 1 || Auth::user()->role_as == 3)
                                     <a href="{{ url('edit-brand/'.$item->id) }}" class="btn btn-primary pull-righ">Modifier</a>

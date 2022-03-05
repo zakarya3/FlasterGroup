@@ -125,16 +125,14 @@
 							<a class="nav-link  dropdown-toggle" href="#" id="demosMenu" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Produits</a>
 							<div class="dropdown-menu pb-3 pb-lg-0" aria-labelledby="demosMenu" >
 								<div class="d-block d-sm-flex">
+									@foreach ( $category as $item)
 									<ul class="list-unstyled w-100 w-sm-50 pe-0 pe-lg-5">
-										<li class="dropdown-header">Pole labtech</li>
-										<li> <a class="dropdown-item" href="index-2.html">Matériel scientifique et technique de laboratoire</a> </li>
-										<li> <a class="dropdown-item" href="index-3.html">La robotique</a> </li>
+										<li class="dropdown-header">{{ $item->name }}</li>
+										@foreach ($item->type as $item_tp )
+										<li> <a class="dropdown-item" href="{{ url('products-items/'.$item_tp->name) }}">{{ $item_tp->name }}</a> </li>
+										@endforeach
 									</ul>
-									<ul class="list-unstyled w-100 w-sm-50 pe-0 pe-lg-5">
-										<li class="dropdown-header">Pole labtech</li>
-										<li> <a class="dropdown-item" href="index-2.html">Matériel scientifique et technique de laboratoire</a> </li>
-										<li> <a class="dropdown-item" href="index-3.html">La robotique</a> </li>
-									</ul>
+									@endforeach
 								</div>
 							</div>
 						</li>

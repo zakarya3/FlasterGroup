@@ -14,7 +14,7 @@
   <link href="{{ asset('admin/css/material-dashboard.min1c51.css') }}" rel="stylesheet" />
   <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Roboto+Slab:400,700|Material+Icons" />
   <!-- CSS Just for demo purpose, don't include it in your project -->
-    <link href="{{ asset('frontend/css/bootstrap.css') }}" rel="stylesheet">
+    <link href="{{ asset('frontend/bootstrap/css/style.css') }}" rel="stylesheet">
     <link href="{{ asset('frontend/css/custom.css') }}" rel="stylesheet">
 </head>
 <body>

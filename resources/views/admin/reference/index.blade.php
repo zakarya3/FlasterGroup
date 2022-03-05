@@ -78,7 +78,7 @@
                             <td>{{ $item->date }}</td>
                             <td>{{ $item->description }}</td>
                             <td>
-                              <img src="{{ asset('assets/uploads/references/images/'.$item->image) }}" class="cate-image" style="width: 100%" alt="image here">
+                              <img src="{{ asset('assets/uploads/references/images/'.$item->image) }}" class="cate-image" style="width: 60%"alt="image here">
                             </td>
                             <td>
                               <a href="{{ url('edit-ref/'.$item->id) }}" class="btn btn-primary pull-righ">Modifier</a>

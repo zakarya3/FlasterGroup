@@ -25,9 +25,12 @@ use App\Http\Controllers\Cart\CheckoutController;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('/',[FrontController::class,'index']);
+
+Route::get('/products-items/{name}',[FrontController::class,'products']);
+Route::get('/products-items/order-by-brand/{id}',[FrontController::class,'filter']);
+
+Route::get('/product/{cat}/{name}',[FrontController::class,'product']);
 
 Auth::routes();
 
