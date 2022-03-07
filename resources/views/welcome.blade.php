@@ -70,10 +70,10 @@ about us  -->
                 <div class="col-md-6">
                     <div class="row mt-4 mt-md-0">
                         <div class="col-5 offset-1 px-2 mb-3 align-self-end">
-                            <img class="rounded aos" data-aos="fade-up" data-aos-delay="200" data-aos-duration="1000" data-aos-easing="ease-in-out" src="frontend/images/categories/industrie.jpg" alt="">
+                            <img class="rounded aos" data-aos="fade-up" data-aos-delay="200" data-aos-duration="1000" data-aos-easing="ease-in-out" src="{{ asset('frontend/images/categories/industrie.jpg') }}" alt="">
                         </div>
                         <div class="col-6 px-2 mb-3">
-                            <img class="rounded aos" data-aos="fade-right" data-aos-delay="200" data-aos-duration="1000" src="frontend/images/categories/Peel-3D-scanner-Hero.jpg" alt="">
+                            <img class="rounded aos" data-aos="fade-right" data-aos-delay="200" data-aos-duration="1000" src="{{ asset('frontend/images/categories/Peel-3D-scanner-Hero.jpg') }}" alt="">
                         </div>
                         <div class="col-7 px-2 mb-3">
                             <div class="rounded aos bg-grad p-2 p-sm-3 p-lg-4 p-xl-5 all-text-white" data-aos="fade-left" data-aos-delay="300" data-aos-duration="1500">
@@ -82,7 +82,7 @@ about us  -->
                             </div>
                         </div>
                         <div class="col-5 align-self-start ps-2 mb-3">
-                            <img class="rounded aos" data-aos="fade-down" data-aos-delay="300" data-aos-duration="1500" src="frontend/images/categories/lumieres.png" alt="">
+                            <img class="rounded aos" data-aos="fade-down" data-aos-delay="300" data-aos-duration="1500" src="{{ asset('frontend/images/categories/serre2.jpeg') }}" alt="">
                         </div>
                     </div>
                 </div>
@@ -118,33 +118,33 @@ service -->
         </div>
         <div class="row" style="justify-content: center;">
             <div class="col-md-4 mt-30">
-                <div class="feature-box f-style-2 icon-grad h-100">
+                <div class="feature-box f-style-2 icon-grad h-100" style="background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.455), rgba(0, 0, 0, 0)),  url({{ asset('frontend/images/categories/Couverture2-min.jpeg') }}); background-position: center; background-repeat: no-repeat; background-size: cover; color: #fff !important;">
                     <div class="feature-box-icon"><i class="ti-reddit"></i></div>
-                    <h3 class="feature-box-title">Pole Labtech</h3>
+                    <h3 class="feature-box-title" style="color: #fff;">Pole Labtech</h3>
                     <p class="feature-box-desc">Matériel scientifique et technique de laboratoire, produits chimique, matériel didactique et banc d'essai et matériel de mesure de haute précision.. </p>
                     <a class="mt-3" href="#">Know more!</a>
                 </div>
             </div>
             <div class="col-md-4 mt-30">
-                <div class="feature-box f-style-2 icon-grad h-100">
+                <div class="feature-box f-style-2 icon-grad h-100" style="background-image:linear-gradient(to bottom, rgba(0, 0, 0, 0.455), rgba(0, 0, 0, 0)),  url({{ asset('frontend/images/categories/serre.jpg') }}); background-position: center; background-repeat: no-repeat; background-size: cover; color: #fff !important;">
                     <div class="feature-box-icon"><i class="ti-save-alt"></i></div>
-                    <h3 class="feature-box-title">Pole Agrotech</h3>
+                    <h3 class="feature-box-title" style="color: #fff;">Pole Agrotech</h3>
                     <p class="feature-box-desc">Matériel de conditionnement, valorisation et d'emballage agro-alimentaire, Matériel agricole, produit agro-alimentaire, serres.... </p>
                     <a class="mt-3" href="#">Know more!</a>
                 </div>
             </div>
             <div class="col-md-4 mt-30">
-                <div class="feature-box f-style-2 icon-grad h-100">
+                <div class="feature-box f-style-2 icon-grad h-100" style="background-image:linear-gradient(to bottom, rgba(0, 0, 0, 0.455), rgba(0, 0, 0, 0)),  url({{ asset('frontend/images/categories/manut.jpg') }}); background-position: center; background-repeat: no-repeat; background-size: cover; color: #fff !important;">
                     <div class="feature-box-icon"><i class="ti-ruler-pencil"></i></div>
-                    <h3 class="feature-box-title">Pole manutention</h3>
+                    <h3 class="feature-box-title" style="color: #fff;">Pole manutention</h3>
                     <p class="feature-box-desc">Rayonnage industrielle et commerciale, Matériel de manutention (Chariot élévateur et gerbeurs) </p>
                     <a class="mt-3" href="#">Know more!</a>
                 </div>
             </div>
             <div class="col-md-4 mt-30">
-                <div class="feature-box f-style-2 icon-grad h-100">
+                <div class="feature-box f-style-2 icon-grad h-100" style="background-image:linear-gradient(to bottom, rgba(0, 0, 0, 0.455), rgba(0, 0, 0, 0)),  url({{ asset('frontend/images/categories/ing.jpg') }}); background-position: center; background-repeat: no-repeat; background-size: cover; color: #fff !important;">
                     <div class="feature-box-icon"><i class="ti-agenda"></i></div>
-                    <h3 class="feature-box-title">Pole Ingénus</h3>
+                    <h3 class="feature-box-title" style="color: #fff;">Pole Ingénus</h3>
                     <p class="feature-box-desc">Ingénierie, conception et Modélisation des systèmes industriels</p>
                     <a class="mt-3" href="#">Know more!</a>
                 </div>
@@ -247,16 +247,11 @@ client -->
             </div>
             <div class="col-md-12">
                 <!-- Slider START -->
-                <div class="tiny-slider arrow-hover arrow-gray">
-                    <div class="tiny-slider-inner" data-arrow="true" data-dots="false" data-autoplay="3800" data-gutter="80" data-items-xl="6" data-items-lg="5" data-items-md="4" data-items-sm="3" data-items-xs="2">
-                        <div class="item"><img src="frontend/images/clients/01.png" alt=""></div>
-                        <div class="item"><img src="frontend/images/clients/02.png" alt=""></div>
-                        <div class="item"><img src="frontend/images/clients/03.png" alt=""></div>
-                        <div class="item"><img src="frontend/images/clients/04.png" alt=""></div>
-                        <div class="item"><img src="frontend/images/clients/05.png" alt=""></div>
-                        <div class="item"><img src="frontend/images/clients/06.png" alt=""></div>
-                        <div class="item"><img src="frontend/images/clients/07.png" alt=""></div>
-                        <div class="item"><img src="frontend/images/clients/08.png" alt=""></div>
+                <div class="tiny-slider">
+                    <div class="tiny-slider-inner" data-arrow="true" data-dots="false"">
+                        <div class="item" style="width: 50%;"><img src="{{ asset('frontend/images/clients/sbtech.png') }}" style="height: 10vh; width: 65%; object-fit: contain;" alt=""></div>
+                        <div class="item" style="width: 50%;"><img src="{{ asset('frontend/images/clients/swiss.png') }}" style="height: 10vh; width: 65%; object-fit: contain;" alt=""></div>
+                        <div class="item" style="width: 50%;"><img src="{{ asset('frontend/images/clients/vidka.png') }}" style="height: 10vh; width: 65%; object-fit: contain;" alt=""></div>
                     </div>
                 </div>
             </div>
@@ -268,17 +263,17 @@ client -->
 
     <!-- =======================
 why-us -->
-<section class="p-0">
+<section class="p-0" style="margin-bottom: 3em;">
     <div class="container">
         <div class="row g-0 rounded overflow-hidden">
             <!--why us left-->
-            <div class="col-lg-6 d-none d-lg-block bg-light" style="background:url(frontend/images/categories/cata.jpg) no-repeat; background-size:cover;">
+            <div class="col-lg-6 d-none d-lg-block bg-light" style="background:url({{ asset('frontend/images/categories/commerce.jpg') }}) no-repeat; background-size:cover; background-position: center;">
             </div>
             <!--why us right-->
             <div class="col-md-6" style="padding-left: 1em;">
                 <div class="h-100">
                     <h3>Télécharger notre catalogue produits</h3>
-                    <form class="contact-form needs-validation" id="contact-form" name="contactform" method="POST" action="https://wizixo.webestica.com/frontend/include/contact-action.php" novalidate>
+                    <form class="contact-form needs-validation" id="contact-form" name="contactform" method="POST" action="https://wizixo.webestica.com/assets/include/contact-action.php" novalidate>
                         <!-- Main form -->
                         <div class="row">
                             <div class="col-md-6">
@@ -302,7 +297,7 @@ why-us -->
                             <div class="col-md-12">
                                 <!-- Message -->
                                 <div class="mb-3 position-relative">
-                                    <textarea required id="con-message" name="message" cols="40" rows="6" class="form-control" placeholder="Message"></textarea>
+                                    <textarea required id="con-message" name="message" cols="40" style="height: 190px;" rows="6" class="form-control" placeholder="Message"></textarea>
                                 </div>
                             </div>
                             <!-- submit button -->

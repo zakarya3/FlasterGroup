@@ -6,12 +6,11 @@
 		<div class="container">
 			<div class="row all-text-white">
 				<div class="col-md-12 align-self-center">
-					<h1 class="fw-bold">Portfolio 4 Col</h1>
-					<h6 class="mb-5">Show your awesome work in 4 columns grid style</h6>
+					<h1 class="fw-bold">Produits</h1>
 					<nav aria-label="breadcrumb">
 						<ol class="breadcrumb justify-content-center">
-							<li class="breadcrumb-item active"><a href="index.html"><i class="ti-home"></i> Home</a></li>
-							<li class="breadcrumb-item">Portfolio</li>
+							<li class="breadcrumb-item active"><a href="{{ url('/') }}"><i class="ti-home"></i> Accueil</a></li>
+							<li class="breadcrumb-item">Produits</li>
 						</ol>
 					</nav>
 				</div>
@@ -31,11 +30,9 @@
                         <label for="exampleDataList" class="form-label">Rechercher un produit</label>
                         <input class="form-control" list="datalistOptions" id="exampleDataList" placeholder="Type to search...">
                         <datalist id="datalistOptions">
-                          <option value="San Francisco">
-                          <option value="New York">
-                          <option value="Seattle">
-                          <option value="Los Angeles">
-                          <option value="Chicago">
+                          @foreach ($product as $item)
+							  <option value="{{ $item->product_name }}">
+						  @endforeach
                         </datalist>
 					</div>
 					<div class="portfolio-wrap grid items-4 items-padding filter-container" data-isotope='{ "layoutMode": "masonry" }'>

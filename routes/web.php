@@ -26,8 +26,12 @@ use App\Http\Controllers\Cart\CheckoutController;
 */
 
 Route::get('/',[FrontController::class,'index']);
+Route::get('contact', [FrontController::class,'contact']);
+Route::get('/category',[FrontController::class,'category']);
+
 
 Route::get('/products-items/{name}',[FrontController::class,'products']);
+Route::get('/products/products-items/{id}',[FrontController::class,'products_id']);
 Route::get('/products-items/order-by-brand/{id}',[FrontController::class,'filter']);
 
 Route::get('/product/{cat}/{name}',[FrontController::class,'product']);

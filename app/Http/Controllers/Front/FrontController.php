@@ -24,6 +24,12 @@ class FrontController extends Controller
         return view('welcome', compact('cartItems'));
     }
 
+    public function category()
+    {
+        $cartItems = \Cart::getContent();
+        return view('categories', compact('cartItems'));
+    }
+
     public function products($name)
     {
         if (SubCategory::where('name',$name)->exists()) {
@@ -37,14 +43,14 @@ class FrontController extends Controller
         }
     }
 
-
-    public function filter($id)
+    public function products_id($id)
     {
-        $product = Product::where('brand_id',$id)->paginate(12);
-        $brand = Brand::all();
+        $type = SubCategory::where('categ_id',$id)->pluck('id');
+        $product = Product::where('cate_id',$type)->paginate(12);
         $cartItems = \Cart::getContent();
-        return view('products',compact('product','brand','cartItems'));
+        return view('products',compact('product','cartItems'));
     }
+
 
     public function product($cate, $name)
     {

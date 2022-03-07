@@ -81,7 +81,7 @@
 						<!-- top link -->
 						<ul class="nav">
               <li class="nav-item">
-                  <a class="navbar-link mx-3" href="contact.html">Contact</a>
+                  <a class="navbar-link mx-3" href="{{ url('/contact') }}">Contact</a>
               </li>
             </ul>
 						<!-- top social -->
@@ -106,7 +106,7 @@
 		<nav class="navbar navbar-expand-lg">
 			<div class="container">
 				<!-- Logo -->
-				<a class="navbar-brand" href="index.html">
+				<a class="navbar-brand" href="{{ url('/') }}">
 					<!-- Logo -->
 					<img class="navbar-brand-item" src="{{ asset('frontend/images/logo/logo.png') }}" alt="Logo">
 				</a>
@@ -118,11 +118,11 @@
 				<div class="collapse navbar-collapse" id="navbarCollapse">
 					<ul class="navbar-nav navbar-nav-scroll navbar-nav-scroll ms-auto">
 						<li class="nav-item dropdown">
-							<a class="nav-link active" href="#" id="blogMenu" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Accueil</a>
+							<a class="nav-link active" href="{{ url('/') }}" id="blogMenu">Accueil</a>
 						</li>
 						<!-- Menu item 1 Demos-->
 						<li class="nav-item dropdown">
-							<a class="nav-link  dropdown-toggle" href="#" id="demosMenu" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Produits</a>
+							<a class="nav-link  dropdown-toggle" href="{{ url('category') }}" id="demosMenu">Produits</a>
 							<div class="dropdown-menu pb-3 pb-lg-0" aria-labelledby="demosMenu" >
 								<div class="d-block d-sm-flex">
 									@foreach ( $category as $item)
@@ -138,13 +138,13 @@
 						</li>
 						<!-- Menu item 2 Blog-->
 						<li class="nav-item dropdown">
-							<a class="nav-link" href="#" id="blogMenu" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Contact</a>
+							<a class="nav-link" href="{{ url('/contact') }}" id="blogMenu">Contact</a>
 						</li>
 						<li class="nav-item dropdown">
-							<a class="nav-link" href="#" id="blogMenu" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Références</a>
+							<a class="nav-link" href="#" id="blogMenu">Références</a>
 						</li>
 						<li class="nav-item dropdown">
-							<a class="nav-link" href="#" id="blogMenu" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Mes commandes</a>
+							<a class="nav-link" href="#" id="blogMenu">Mes commandes</a>
 						</li>
 						<!-- Menu item 3 Pages-->
 					</ul>
@@ -194,7 +194,9 @@
 						<div class="widget address" style="background-image: url('assets/images/world-map.png'); background-position: 50% 20px; background-repeat: no-repeat; background-size: contain;">
 							<ul class="list-group list-group-borderless">
 								<li class="d-flex mb-3"><i class="me-3 display-8 ti-map-alt"></i>Bureau N 1 .Av Prince Abdelkader N 78 Cite Almassira Agadir. </li>
+								<li class="d-flex mb-3"><i class="me-3 display-8 ti-map-alt"></i>SIÉGÉ SOCIALE/ USINE: IMM A133 N°7 GH 117 RCE DU GOLF KENITRA </li>
 								<li class="d-flex mb-3"><i class="me-3 display-8 ti-headphone-alt"></i> (+212)5 28 32 07 35 </li>
+								<li class="d-flex mb-3"><i class="me-3 display-8 ti-headphone-alt"></i> (+212)6 61 93 78 04</li>
 								<li class="d-flex mb-3"><i class="me-3 display-8 ti-email"></i> info@flaster.ma</li>
 								<li class="d-flex mb-3"><i class="me-3 display-8 ti-time"></i>
 									<p>Mon - Fri: <strong>09:00 - 18:00</strong> <br>Sat: <strong>09:00 - 13:00</strong></p>
@@ -208,7 +210,7 @@
 							<h6>Quick LInks</h6>
 							<ul class="nav flex-column primary-hover">
 								<li class="nav-item"><a class="nav-link" href="about-classic.html">About</a></li>
-								<li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+								<li class="nav-item"><a class="nav-link" href="{{ url('/contact') }}">Contact</a></li>
 								<li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
 								<li class="nav-item"><a class="nav-link" href="blog-grid-left-sidebar.html">Blog</a></li>
 								<li class="nav-item"><a class="nav-link" href="portfolio-grid-column-4.html">Portfolio</a></li>
@@ -259,7 +261,9 @@
 	<div> <a href="#" class="back-top btn btn-grad"><i class="ti-angle-up"></i></a> </div>
 
 	<!-- Bootstrap JS -->
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
 	<script src="{{ asset('frontend/vendor/bootstrap/dist/js/bootstrap.bundle.min.js') }}"></script>
+	<script src="{{ asset('frontend/js/custom.js') }}"></script>
 
 	<!--Vendors-->
 	<script src="{{ asset('frontend/vendor/aos/aos.js') }}"></script>
