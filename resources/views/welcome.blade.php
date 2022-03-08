@@ -10,7 +10,7 @@
                         <div class="col-lg-8 col-xl-6 me-auto slider-content justify-content-center align-self-center align-items-start text-start">
                             <h2 class="animate__animated animate__fadeInUp animate__delay-1s display-2 fw-bold text-white">Pole Labtech:</h2>
                             <h3 class="animate__animated animate__fadeInUp animate__delay-2s text-white display-7 alt-font fst-italic mb-2 my-md-4">Matériel scientifique et technique de laboratoire, produits chimique, matériel didactique et banc d'essai et matériel de mesure de haute précision.</h3>
-                            <div class="animate__animated animate__fadeInUp animate__delay-3s mt-3 dealy-1500"><a href="#" class="btn btn-grad">Contactez-nous!</a></div>
+                            <div class="animate__animated animate__fadeInUp animate__delay-3s mt-3 dealy-1500"><a href="{{ url('contact') }}" class="btn btn-grad">Contactez-nous!</a></div>
                         </div>
                     </div>
                 </div>
@@ -23,7 +23,7 @@
                             <div class="slider-content text-center ">
                                 <h2 class="animate__animated animate__fadeInUp animate__delay-2s display-3 fw-bold text-white">Pole Agrotech:</h2>
                                 <h3 class="animate__animated animate__fadeInUp animate__delay-1s display-7 text-white alt-font fst-italic">Matériel de conditionnement, valorisation et d'emballage agro-alimentaire, Matériel agricole, produit agro-alimentaire, serres....</h3>
-                                <div class="animate__animated animate__fadeInUp animate__delay-3s mt-3 dealy-1500"><a href="#" class="btn btn-grad">Contactez-nous!</a></div>
+                                <div class="animate__animated animate__fadeInUp animate__delay-3s mt-3 dealy-1500"><a href="{{ url('contact') }}" class="btn btn-grad">Contactez-nous!</a></div>
                             </div>
                         </div>
                     </div>
@@ -36,7 +36,7 @@
                         <div class="col-lg-8 col-xl-6 me-auto slider-content justify-content-center align-self-center align-items-start text-start">
                             <h2 class="animate__animated animate__fadeInUp animate__delay-1s display-2 fw-bold text-white">Pole manutention :</h2>
                             <h3 class="animate__animated animate__fadeInUp animate__delay-2s text-white display-7 alt-font fst-italic mb-2 my-md-4">Rayonnage industrielle et commerciale, Matériel de manutention (Chariot élévateur et gerbeurs)</h3>
-                            <div class="animate__animated animate__fadeInUp animate__delay-3s mt-3 dealy-1500"><a href="#" class="btn btn-grad">Contactez-nous!</a></div>
+                            <div class="animate__animated animate__fadeInUp animate__delay-3s mt-3 dealy-1500"><a href="{{ url('contact') }}" class="btn btn-grad">Contactez-nous!</a></div>
                         </div>
                     </div>
                 </div>
@@ -49,7 +49,7 @@
                             <div class="slider-content text-center ">
                                 <h2 class="animate__animated animate__fadeInUp animate__delay-2s display-3 fw-bold text-white">Pole Ingénus :</h2>
                                 <h3 class="animate__animated animate__fadeInUp animate__delay-1s display-7 text-white alt-font fst-italic">Ingénierie, conception et Modélisation des systèmes industriels</h3>
-                                <div class="animate__animated animate__fadeInUp animate__delay-3s mt-3 dealy-1500"><a href="#" class="btn btn-grad">Contactez-nous!</a></div>
+                                <div class="animate__animated animate__fadeInUp animate__delay-3s mt-3 dealy-1500"><a href="{{ url('contact') }}" class="btn btn-grad">Contactez-nous!</a></div>
                             </div>
                         </div>
                     </div>
@@ -92,8 +92,8 @@ about us  -->
                 <p class="lead">a été fondé en 2014, dynamique, née d'une véritable passion pour la fabrication, l'importation et la distribution du matériel industriel. <br> Notre savoir faire et nos compétences reposent sur un bureau d'études, nos compétences terrain et des personnels expérimentés et motivés.</p>
                 <p>Quelque soit votre projet, note groupe vous accompagne, identifie l'ensemble de vos besoins et vous propose une gamme de matériels et des solutions personnalisée répondant à vos attentes</p>
                 <div>
-                    <a href="#" class="btn btn-dark">Contactez-nous!</a>
-                    <a href="#" class="btn btn-link">View Portfolio</a>
+                    <a href="{{ url('contact') }}" class="btn btn-dark">Contactez-nous!</a>
+                    <a href="{{ url('contact') }}" class="btn btn-link">View Portfolio</a>
                 </div>
             </div>
         </div>
@@ -122,7 +122,7 @@ service -->
                     <div class="feature-box-icon"><i class="ti-reddit"></i></div>
                     <h3 class="feature-box-title" style="color: #fff;">Pole Labtech</h3>
                     <p class="feature-box-desc">Matériel scientifique et technique de laboratoire, produits chimique, matériel didactique et banc d'essai et matériel de mesure de haute précision.. </p>
-                    <a class="mt-3" href="#">Know more!</a>
+                    <a class="mt-3" href="{{ url('contact') }}">Know more!</a>
                 </div>
             </div>
             <div class="col-md-4 mt-30">
@@ -130,7 +130,7 @@ service -->
                     <div class="feature-box-icon"><i class="ti-save-alt"></i></div>
                     <h3 class="feature-box-title" style="color: #fff;">Pole Agrotech</h3>
                     <p class="feature-box-desc">Matériel de conditionnement, valorisation et d'emballage agro-alimentaire, Matériel agricole, produit agro-alimentaire, serres.... </p>
-                    <a class="mt-3" href="#">Know more!</a>
+                    <a class="mt-3" href="{{ url('contact') }}">Know more!</a>
                 </div>
             </div>
             <div class="col-md-4 mt-30">
@@ -138,7 +138,7 @@ service -->
                     <div class="feature-box-icon"><i class="ti-ruler-pencil"></i></div>
                     <h3 class="feature-box-title" style="color: #fff;">Pole manutention</h3>
                     <p class="feature-box-desc">Rayonnage industrielle et commerciale, Matériel de manutention (Chariot élévateur et gerbeurs) </p>
-                    <a class="mt-3" href="#">Know more!</a>
+                    <a class="mt-3" href="{{ url('contact') }}">Know more!</a>
                 </div>
             </div>
             <div class="col-md-4 mt-30">
@@ -146,7 +146,7 @@ service -->
                     <div class="feature-box-icon"><i class="ti-agenda"></i></div>
                     <h3 class="feature-box-title" style="color: #fff;">Pole Ingénus</h3>
                     <p class="feature-box-desc">Ingénierie, conception et Modélisation des systèmes industriels</p>
-                    <a class="mt-3" href="#">Know more!</a>
+                    <a class="mt-3" href="{{ url('contact') }}">Know more!</a>
                 </div>
             </div>
         </div>

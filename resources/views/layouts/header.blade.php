@@ -158,7 +158,11 @@
 					</div>
 					<!-- extra item Btn-->
 					<div class="nav-item border-0 d-none d-lg-inline-block align-self-center">
-						<a href="{{ url('cart') }}" class=" btn btn-sm btn-grad text-white mb-0"><i class="fas fa-shopping-cart"></i> {{ Cart::getTotalQuantity()}} articles</a>
+						<a @if (Cart::getTotalQuantity()!=0)
+							href="{{ url('cart') }}" 
+						@else
+							href="{{ url('/') }}"
+						@endif class=" btn btn-sm btn-grad text-white mb-0"><i class="fas fa-shopping-cart"></i> {{ Cart::getTotalQuantity()}} articles</a>
 					</div>
 				</div>
 				<!-- Header Extras End-->
