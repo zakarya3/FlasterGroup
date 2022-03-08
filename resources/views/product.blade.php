@@ -56,7 +56,7 @@
                         </div>
                     </div>
                     
-                    <form action="" method="post" enctype="multipart/form-data">
+                    <form action="{{ route('cart.store') }}" method="post" enctype="multipart/form-data">
                         @csrf
                         <input type="hidden" value="{{ $product->id }}" name="id">
                         <input type="hidden" value="{{ $product->product_name }}" name="name">

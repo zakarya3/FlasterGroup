@@ -22,8 +22,7 @@
 			<div class="row">
 				<div class="col-12 col-lg-8 mx-auto">
 					<div class="title text-center">
-						<h2>How can we assist you?</h2>
-						<p>Wizixo customer support is available free of charge. Connection charges can vary when calling from outside the area, abroad or from a mobile phone.</p>
+						<h2>Comment pouvons-nous vous aider ?</h2>
 					</div>
 				</div>
 			</div>
@@ -60,15 +59,17 @@
 				<!-- contact form -->
 				<div class="col-md-6">
 					<div class="h-100">
-						<h3>Have a project? Let's make something great together!</h3>
-						<p>Get in touch with us to see how we can help you with your project</p>
-						<form class="contact-form needs-validation" id="contact-form" name="contactform" method="POST" action="https://wizixo.webestica.com/assets/include/contact-action.php" novalidate>
+						<h3>Contactez-nous!</h3>
+						<p>Merci de bien vouloir remplir ce formulaire afin de nous faire part de vos demandes.</p>
+						<form class="contact-form needs-validation" id="contact-form" name="contactform" method="POST" action="{{ url('contact-message') }}" novalidate>
 							<!-- Main form -->
+							@csrf
+							@method('PUT')
 							<div class="row">
 								<div class="col-md-6">
 									<!-- name -->
 									<div class="mb-3 position-relative">
-										<input required id="con-name" name="name" type="text" class="form-control" placeholder="Name">
+										<input required id="con-name" name="name" type="text" class="form-control" placeholder="Nom">
 									</div>
 								</div>
 								<div class="col-md-6">
@@ -80,7 +81,13 @@
 								<div class="col-md-12">
 									<!-- Subject -->
 									<div class="mb-3 position-relative">
-										<input required id="con-subject" name="subject" type="text" class="form-control" placeholder="Subject">
+										<input  id="con-subject" name="phone" type="text" class="form-control" placeholder="Téléphone">
+									</div>
+								</div>
+								<div class="col-md-12">
+									<!-- Subject -->
+									<div class="mb-3 position-relative">
+										<input  id="con-subject" name="subject" type="text" class="form-control" placeholder="Sujet*">
 									</div>
 								</div>
 								<div class="col-md-12">
@@ -90,7 +97,7 @@
 									</div>
 								</div>
 								<!-- submit button -->
-								<div class="col-md-12 d-grid"><button class="btn btn-dark m-0" type="submit">Send Message</button></div>
+								<div class="col-md-12 d-grid"><button class="btn btn-dark m-0" type="submit">Envoyer</button></div>
 							</div>
 						</form>
 					</div>
@@ -107,12 +114,12 @@
 		<div class="container ">
 			<div class="row justify-content-md-center">
 				<div class="col-md-4 text-center">
-					<h5 class="mb-1"> Join us on Chat</h5>
-					<p>If you have technical questions, chat live with developers in our <a href="#">live chat</a></p>
+					<h5 class="mb-1">Questions techniques</h5>
+					<p>Si vous avez des questions techniques, veuillez envoyer un e-mail <a href="mail:h.belbekri@flaster.ma">h.belbekri@flaster.ma</a> ou <a href="mail:dg@flaster.ma">dg@flaster.ma</a></p>
 				</div>
 				<div class="col-md-4 text-center">
-					<h5 class="mb-1"> General communication</h5>
-					<p>For general queries, including partnership opportunities, please email <a href="#">info@flaster.ma</a></p>
+					<h5 class="mb-1">Communication générale</h5>
+					<p>Pour les questions générales, veuillez envoyer un e-mail <a href="mail:info@flaster.ma">info@flaster.ma</a></p>
 				</div>
 			</div>
 		</div>

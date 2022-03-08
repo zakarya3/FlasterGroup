@@ -46,7 +46,7 @@ class FrontController extends Controller
     public function products_id($id)
     {
         $type = SubCategory::where('categ_id',$id)->pluck('id');
-        $product = Product::where('cate_id',$type)->paginate(12);
+        $product = Product::whereIn('cate_id',$type)->paginate(12);
         $cartItems = \Cart::getContent();
         return view('products',compact('product','cartItems'));
     }
@@ -78,7 +78,7 @@ class FrontController extends Controller
         $message1 = $request->message;
         $data = ['name'=> $name, 'phone'=> $phone, 'email'=> $email, 'subject'=> $subject, 'message1'=> $message1];
         Mail::send('message', $data, function ($message) use ($email) {
-            $message->to('info@sbtech.ma');
+            $message->to('zakaria.aanni@gmail.com');
             $message->subject('Question?');
         });
         return redirect()->back();
@@ -103,7 +103,7 @@ class FrontController extends Controller
 
         Mail::send('admin-cata', $data, function ($message) use ($email) {
             $message->from($email);
-            $message->to('info@sbtech.ma');
+            $message->to('zakaria.aanni@gmail.com');
             $message->subject('Téléchargement du catalogue');
         });
         return redirect()->back();

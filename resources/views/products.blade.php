@@ -40,8 +40,8 @@
                         @foreach ($product as $item)
                         <div class="portfolio-card grid-item digital">
 							<div class="portfolio-card-body">
-								<div class="portfolio-card-header">
-									<img src="{{ asset('assets/uploads/products/images/'.$item->image) }}" alt="">
+								<div class="portfolio-card-header" style="height: 35vh;">
+									<img src="{{ asset('assets/uploads/products/images/'.$item->image) }}" style="width: 100%; height: 100%; object-fit: contain" alt="">
 								</div>
 								<div class="portfolio-card-footer">
 									<a class="full-screen" href="{{ asset('assets/uploads/products/images/'.$item->image) }}"  data-glightbox="" data-gallery="portfolio"><i class="ti-fullscreen"></i></a>
@@ -52,7 +52,7 @@
                                     <p class="fs-lg fw-semibold text-primary mb-0">Contactez-nous</p>
                                     @endif
 									<p>{{ $item->brand->brand_name }}, {{ $item->category->name }}</p>
-                                    <form action="" style="width: 100%" method="post" enctype="multipart/form-data">
+                                    <form action="{{ route('cart.store') }}" style="width: 100%" method="post" enctype="multipart/form-data">
                                         @csrf
                                         <input type="hidden" value="{{ $item->id }}" name="id">
                                         <input type="hidden" value="{{ $item->product_name }}" name="name">

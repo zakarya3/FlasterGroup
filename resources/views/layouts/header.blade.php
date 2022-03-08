@@ -87,10 +87,10 @@
 						<!-- top social -->
 						<ul class="social-icons">
 							<li class="social-icons-item social-facebook m-0">
-								<a class="social-icons-link w-auto px-2" href="#"><i class="fab fa-facebook-f"></i></a>
+								<a class="social-icons-link w-auto px-2" href="https://www.facebook.com/Flaster-GROUP-340059340563642/"><i class="fab fa-facebook-f"></i></a>
 							</li>
 							<li class="social-icons-item social-instagram m-0">
-								<a class="social-icons-link w-auto px-2" href="#"><i class="fab fa-instagram"></i></a>
+								<a class="social-icons-link w-auto px-2" href="https://www.instagram.com/flaster_group_holding/?hl=en"><i class="fab fa-instagram"></i></a>
 							</li>
 							<li class="social-icons-item social-twitter m-0">
 								<a class="social-icons-link w-auto ps-2" href="#"><i class="fab fa-twitter"></i></a>
@@ -120,31 +120,31 @@
 						<li class="nav-item dropdown">
 							<a class="nav-link active" href="{{ url('/') }}" id="blogMenu">Accueil</a>
 						</li>
-						<!-- Menu item 1 Demos-->
+						
 						<li class="nav-item dropdown">
 							<a class="nav-link  dropdown-toggle" href="{{ url('category') }}" id="demosMenu">Produits</a>
-							<div class="dropdown-menu pb-3 pb-lg-0" aria-labelledby="demosMenu" >
-								<div class="d-block d-sm-flex">
-									@foreach ( $category as $item)
-									<ul class="list-unstyled w-100 w-sm-50 pe-0 pe-lg-5">
-										<li class="dropdown-header">{{ $item->name }}</li>
-										@foreach ($item->type as $item_tp )
-										<li> <a class="dropdown-item" href="{{ url('products-items/'.$item_tp->name) }}">{{ $item_tp->name }}</a> </li>
+							<ul class="dropdown-menu" aria-labelledby="blogMenu">
+								@foreach ($category as $item)
+								<li class="dropdown-submenu">
+									<a class="dropdown-item dropdown-toggle" href="#">{{ $item->name }}</a>
+									<ul class="dropdown-menu">
+										@foreach ($item->type as $item_tp)
+										<li> <a class="dropdown-item" href="{{ url('products-items/'.$item_tp->name) }}">{{ $item_tp->name }}</a></li>
 										@endforeach
 									</ul>
-									@endforeach
-								</div>
-							</div>
+								</li>
+								@endforeach
+							</ul>
 						</li>
 						<!-- Menu item 2 Blog-->
 						<li class="nav-item dropdown">
 							<a class="nav-link" href="{{ url('/contact') }}" id="blogMenu">Contact</a>
 						</li>
 						<li class="nav-item dropdown">
-							<a class="nav-link" href="#" id="blogMenu">Références</a>
+							<a class="nav-link" href="{{ url('references') }}" id="blogMenu">Références</a>
 						</li>
 						<li class="nav-item dropdown">
-							<a class="nav-link" href="#" id="blogMenu">Mes commandes</a>
+							<a class="nav-link" href="{{ url('myorders') }}" id="blogMenu">Mes commandes</a>
 						</li>
 						<!-- Menu item 3 Pages-->
 					</ul>
@@ -158,7 +158,7 @@
 					</div>
 					<!-- extra item Btn-->
 					<div class="nav-item border-0 d-none d-lg-inline-block align-self-center">
-						<a href="#" class=" btn btn-sm btn-grad text-white mb-0"><i class="ti-shopping-cart"></i> panier</a>
+						<a href="{{ url('cart') }}" class=" btn btn-sm btn-grad text-white mb-0"><i class="fas fa-shopping-cart"></i> {{ Cart::getTotalQuantity()}} articles</a>
 					</div>
 				</div>
 				<!-- Header Extras End-->
@@ -209,11 +209,10 @@
 						<div class="widget">
 							<h6>Quick LInks</h6>
 							<ul class="nav flex-column primary-hover">
-								<li class="nav-item"><a class="nav-link" href="about-classic.html">About</a></li>
+								<li class="nav-item"><a class="nav-link" href="{{ url('/') }}">Accueil</a></li>
+								<li class="nav-item"><a class="nav-link" href="{{ url('category') }}">Produits</a></li>
 								<li class="nav-item"><a class="nav-link" href="{{ url('/contact') }}">Contact</a></li>
-								<li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
-								<li class="nav-item"><a class="nav-link" href="blog-grid-left-sidebar.html">Blog</a></li>
-								<li class="nav-item"><a class="nav-link" href="portfolio-grid-column-4.html">Portfolio</a></li>
+								<li class="nav-item"><a class="nav-link" href="{{ url('references') }}">Références</a></li>
 							</ul>
 						</div>
 					</div>
@@ -241,15 +240,6 @@
 						document.write(new Date().getFullYear())
 					  </script> All Rights Reserved by <a href="#!"> Flaster Groupe.</a></div>
 					<!-- copyright links-->
-					<div class="copyright-links primary-hover mt-3 mt-md-0">
-						<ul class="list-inline">
-							<li class="list-inline-item ps-2"><a class="list-group-item-action" href="#">Home</a></li>
-							<li class="list-inline-item ps-2"><a class="list-group-item-action" href="#">About Us</a></li>
-							<li class="list-inline-item ps-2"><a class="list-group-item-action" href="#">Career</a></li>
-							<li class="list-inline-item ps-2"><a class="list-group-item-action" href="#">Privacy Policy</a></li>
-							<li class="list-inline-item ps-2"><a class="list-group-item-action pe-0" href="#">Use of terms</a></li>
-						</ul>
-					</div>
 				</div>
 			</div>
 		</div>
