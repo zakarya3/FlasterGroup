@@ -27,6 +27,16 @@
 
 	<!-- Theme CSS -->
 	<link rel="stylesheet" type="text/css" href="{{ asset('frontend/css/style.css') }}" />
+	<style>
+		.cart{
+			display: none;
+		}
+		@media(max-width : 991px){
+			.cart{
+				display: block
+			}
+		}
+	</style>
 
 </head>
 
@@ -141,10 +151,20 @@
 							<a class="nav-link" href="{{ url('/contact') }}" id="blogMenu">Contact</a>
 						</li>
 						<li class="nav-item dropdown">
+							<a class="nav-link" href="{{ url('/project') }}" id="blogMenu">Projet</a>
+						</li>
+						<li class="nav-item dropdown">
 							<a class="nav-link" href="{{ url('references') }}" id="blogMenu">Références</a>
 						</li>
 						<li class="nav-item dropdown">
 							<a class="nav-link" href="{{ url('myorders') }}" id="blogMenu">Mes commandes</a>
+						</li>
+						<li class="nav-item dropdown cart">
+							<a @if (Cart::getTotalQuantity()!=0)
+							href="{{ url('cart') }}" 
+						@else
+							href="{{ url('/') }}"
+						@endif class=" btn btn-sm btn-grad text-white mb-0"><i class="fas fa-shopping-cart"></i> {{ Cart::getTotalQuantity()}} articles</a>
 						</li>
 						<!-- Menu item 3 Pages-->
 					</ul>
