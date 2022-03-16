@@ -275,7 +275,7 @@
 	<div> <a href="#" class="back-top btn btn-grad"><i class="ti-angle-up"></i></a> </div>
 
 	<!-- Bootstrap JS -->
-	<script src="{{ asset('frontend/js/jquery.js') }}" crossorigin="anonymous"></script>
+	<script src="{{ asset('frontend/js/jquery.js') }}"></script>
 	<script src="{{ asset('frontend/vendor/bootstrap/dist/js/bootstrap.bundle.min.js') }}"></script>
 	<script src="{{ asset('frontend/js/custom.js') }}"></script>
 
