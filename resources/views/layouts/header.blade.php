@@ -14,8 +14,8 @@
 	<link rel="shortcut icon" href="{{ asset('frontend/images/logo/icon.png') }}">
 
 	<!-- Google Font -->
-	<link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900%7CPlayfair+Display:400,400i,700,700i%7CRoboto:400,400i,500,700" rel="stylesheet">
-	<link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+	<link rel="stylesheet" href="{{ asset('frontend/css/fontawesome.min.css') }}">
+	<link rel="stylesheet" href="{{ asset('frontend/css/all.min.css') }}">
 
 	<!-- Plugins CSS -->
 	<link rel="stylesheet" type="text/css" href="{{ asset('frontend/vendor/font-awesome/css/all.min.css') }}" />
@@ -275,7 +275,7 @@
 	<div> <a href="#" class="back-top btn btn-grad"><i class="ti-angle-up"></i></a> </div>
 
 	<!-- Bootstrap JS -->
-	<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+	<script src="{{ asset('frontend/js/jquery.js') }}" crossorigin="anonymous"></script>
 	<script src="{{ asset('frontend/vendor/bootstrap/dist/js/bootstrap.bundle.min.js') }}"></script>
 	<script src="{{ asset('frontend/js/custom.js') }}"></script>
 
