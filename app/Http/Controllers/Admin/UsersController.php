@@ -28,7 +28,6 @@ class UsersController extends Controller
         $user->email = $request->input('email');
         $user->phone = $request->input('phone');
         $user->address = $request->input('address');
-        $user->station_id = $request->input('station');
         $user->role_as = $request->input('role');
         $user->update();
         return redirect('/users')->with('status'," User Updated Successfully");

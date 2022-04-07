@@ -70,7 +70,7 @@
 						<!-- Top info -->
 						<ul class="nav list-unstyled ms-3">
 							<li class="nav-item me-3">
-								<a class="navbar-link" href="tel:+212528320735 "><strong>Phone:</strong> (+212)5 28 32 07 35 </a>
+								<a class="navbar-link" href="tel:+212528232329 "><strong>Phone:</strong> ((+212)5 28 23 23 29 </a>
 							</li>
 							<li class="nav-item me-3">
 								<a class="navbar-link" href="mail:info@flaster.ma"><strong>Email:</strong> info@flaster.ma</a>
@@ -219,7 +219,7 @@
 							<ul class="list-group list-group-borderless">
 								<li class="d-flex mb-3"><i class="me-3 display-8 ti-map-alt"></i>Bureau N 1 .Av Prince Abdelkader N 78 Cite Almassira Agadir. </li>
 								<li class="d-flex mb-3"><i class="me-3 display-8 ti-map-alt"></i>SIÉGÉ SOCIALE/ USINE: IMM A133 N°7 GH 117 RCE DU GOLF KENITRA </li>
-								<li class="d-flex mb-3"><i class="me-3 display-8 ti-headphone-alt"></i> (+212)5 28 32 07 35 </li>
+								<li class="d-flex mb-3"><i class="me-3 display-8 ti-headphone-alt"></i> (+212)5 28 23 23 29 </li>
 								<li class="d-flex mb-3"><i class="me-3 display-8 ti-headphone-alt"></i> (+212)6 61 93 78 04</li>
 								<li class="d-flex mb-3"><i class="me-3 display-8 ti-email"></i> info@flaster.ma</li>
 								<li class="d-flex mb-3"><i class="me-3 display-8 ti-time"></i>

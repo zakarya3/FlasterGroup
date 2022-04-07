@@ -30,6 +30,6 @@ class AppServiceProvider extends ServiceProvider
         $category = Category::all();
         $cartItems = \Cart::getContent();
         View::share('category', $category);
-        View::share('cartItems', $cartItems);;
+        View::share('cartItems', $cartItems);
     }
 }

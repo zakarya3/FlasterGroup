@@ -9,7 +9,18 @@
                     <div class="row d-flex h-100">
                         <div class="col-lg-8 col-xl-6 me-auto slider-content justify-content-center align-self-center align-items-start text-start">
                             <h2 class="animate__animated animate__fadeInUp animate__delay-1s display-2 fw-bold text-white">Pole Labtech:</h2>
-                            <h3 class="animate__animated animate__fadeInUp animate__delay-2s text-white display-7 alt-font fst-italic mb-2 my-md-4">Matériel scientifique et technique de laboratoire, produits chimique, matériel didactique et banc d'essai et matériel de mesure de haute précision.</h3>
+                            <h3 class="animate__animated animate__fadeInUp animate__delay-2s text-white display-7 alt-font fst-italic mb-2 my-md-4">Matériel scientifique et technique de laboratoire, Matériel de laboratoire, produits chimique, matériel didactique et banc d'essai et matériel de mesure de haute précision.</h3>
+                            <div class="animate__animated animate__fadeInUp animate__delay-3s mt-3 dealy-1500"><a href="{{ url('contact') }}" class="btn btn-grad">Contactez-nous!</a></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="h-100 bg-overlay-dark-2" style="background-image:url(frontend/images/categories/industrie.jpg); background-position: center center; background-size: cover;">
+                <div class="container h-100">
+                    <div class="row d-flex h-100">
+                        <div class="col-lg-8 col-xl-6 me-auto slider-content justify-content-center align-self-center align-items-start text-start">
+                            <h2 class="animate__animated animate__fadeInUp animate__delay-1s display-2 fw-bold text-white">Pole industrie:</h2>
+                            <h3 class="animate__animated animate__fadeInUp animate__delay-2s text-white display-7 alt-font fst-italic mb-2 my-md-4">Machine industriel, Solutions de manutention o solutions de stockage</h3>
                             <div class="animate__animated animate__fadeInUp animate__delay-3s mt-3 dealy-1500"><a href="{{ url('contact') }}" class="btn btn-grad">Contactez-nous!</a></div>
                         </div>
                     </div>
@@ -22,7 +33,7 @@
                         <div class="col-md-8 justify-content-center align-self-center align-items-start mx-auto">
                             <div class="slider-content text-center ">
                                 <h2 class="animate__animated animate__fadeInUp animate__delay-2s display-3 fw-bold text-white">Pole Agrotech:</h2>
-                                <h3 class="animate__animated animate__fadeInUp animate__delay-1s display-7 text-white alt-font fst-italic">Matériel de conditionnement, valorisation et d'emballage agro-alimentaire, Matériel agricole, produit agro-alimentaire, serres....</h3>
+                                <h3 class="animate__animated animate__fadeInUp animate__delay-1s display-7 text-white alt-font fst-italic">Matériel de conditionnement, Solution de valorisation agricole, valorisation et d'emballage agro-alimentaire, Matériel agricole, produit agro-alimentaire, serres....</h3>
                                 <div class="animate__animated animate__fadeInUp animate__delay-3s mt-3 dealy-1500"><a href="{{ url('contact') }}" class="btn btn-grad">Contactez-nous!</a></div>
                             </div>
                         </div>
@@ -48,7 +59,7 @@
                         <div class="col-md-8 justify-content-center align-self-center align-items-start mx-auto">
                             <div class="slider-content text-center ">
                                 <h2 class="animate__animated animate__fadeInUp animate__delay-2s display-3 fw-bold text-white">Pole Ingénus :</h2>
-                                <h3 class="animate__animated animate__fadeInUp animate__delay-1s display-7 text-white alt-font fst-italic">Ingénierie, conception et Modélisation des systèmes industriels</h3>
+                                <h3 class="animate__animated animate__fadeInUp animate__delay-1s display-7 text-white alt-font fst-italic">Ingénierie, conception et Modélisation des systèmes industriels, Etude, conception et modelisation</h3>
                                 <div class="animate__animated animate__fadeInUp animate__delay-3s mt-3 dealy-1500"><a href="{{ url('contact') }}" class="btn btn-grad">Contactez-nous!</a></div>
                             </div>
                         </div>
@@ -121,7 +132,7 @@ service -->
                 <div class="feature-box f-style-2 icon-grad h-100" style="background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.455), rgba(0, 0, 0, 0)),  url({{ asset('frontend/images/categories/Couverture2-min.jpeg') }}); background-position: center; background-repeat: no-repeat; background-size: cover; color: #fff !important;">
                     <div class="feature-box-icon"><i class="ti-reddit"></i></div>
                     <h3 class="feature-box-title" style="color: #fff;">Pole Labtech</h3>
-                    <p class="feature-box-desc">Matériel scientifique et technique de laboratoire, produits chimique, matériel didactique et banc d'essai et matériel de mesure de haute précision.. </p>
+                    <p class="feature-box-desc">Matériel scientifique et technique de laboratoire, Matériel de laboratoire, produits chimique, matériel didactique et banc d'essai et matériel de mesure de haute précision.. </p>
                     <a class="mt-3" href="{{ url('contact') }}">Know more!</a>
                 </div>
             </div>
@@ -129,7 +140,7 @@ service -->
                 <div class="feature-box f-style-2 icon-grad h-100" style="background-image:linear-gradient(to bottom, rgba(0, 0, 0, 0.455), rgba(0, 0, 0, 0)),  url({{ asset('frontend/images/categories/serre.jpg') }}); background-position: center; background-repeat: no-repeat; background-size: cover; color: #fff !important;">
                     <div class="feature-box-icon"><i class="ti-save-alt"></i></div>
                     <h3 class="feature-box-title" style="color: #fff;">Pole Agrotech</h3>
-                    <p class="feature-box-desc">Matériel de conditionnement, valorisation et d'emballage agro-alimentaire, Matériel agricole, produit agro-alimentaire, serres.... </p>
+                    <p class="feature-box-desc">Matériel de conditionnement, Solution de valorisation agricole, valorisation et d'emballage agro-alimentaire, Matériel agricole, produit agro-alimentaire, serres.... </p>
                     <a class="mt-3" href="{{ url('contact') }}">Know more!</a>
                 </div>
             </div>
@@ -145,7 +156,7 @@ service -->
                 <div class="feature-box f-style-2 icon-grad h-100" style="background-image:linear-gradient(to bottom, rgba(0, 0, 0, 0.455), rgba(0, 0, 0, 0)),  url({{ asset('frontend/images/categories/ing.jpg') }}); background-position: center; background-repeat: no-repeat; background-size: cover; color: #fff !important;">
                     <div class="feature-box-icon"><i class="ti-agenda"></i></div>
                     <h3 class="feature-box-title" style="color: #fff;">Pole Ingénus</h3>
-                    <p class="feature-box-desc">Ingénierie, conception et Modélisation des systèmes industriels</p>
+                    <p class="feature-box-desc">Ingénierie, conception et Modélisation des systèmes industriels, Etude, conception et modelisation</p>
                     <a class="mt-3" href="{{ url('contact') }}">Know more!</a>
                 </div>
             </div>
