@@ -5,7 +5,7 @@
         <div class="row mb-4" data-sticky-container>
             <!-- portfolio images -->
             <div class="col-md-8">
-                <a class="mb-4 d-block" href="{{ asset('assets/uploads/products/images/'.$product->image) }}" data-glightbox="" data-gallery="portfolio"><img src="{{ asset('assets/uploads/products/images/'.$product->image) }}" alt=""></a>
+                <a class="mb-4 d-block" href="{{ asset('assets/uploads/products/images/'.$product->image) }}" data-glightbox="" data-gallery="portfolio"><img src="{{ asset('assets/uploads/products/images/'.$product->image) }}" style="width: 60%" alt=""></a>
             </div>
             <!-- portfolio details -->
             <div class="col-md-4">

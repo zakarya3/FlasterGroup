@@ -40,11 +40,13 @@
                         @foreach ($product as $item)
                         <div class="portfolio-card grid-item digital">
 							<div class="portfolio-card-body">
-								<div class="portfolio-card-header" style="height: 35vh;">
+								<div class="" style="height: 35vh;">
+									<a href="{{ url('product/'.$item->category->name.'/'.$item->product_name) }}">
 									<img src="{{ asset('assets/uploads/products/images/'.$item->image) }}" style="width: 100%; height: 100%; object-fit: contain" alt="">
+
+									</a>
 								</div>
 								<div class="portfolio-card-footer">
-									<a class="full-screen" href="{{ asset('assets/uploads/products/images/'.$item->image) }}"  data-glightbox="" data-gallery="portfolio"><i class="ti-fullscreen"></i></a>
 									<h6 class="info-title" style="height: 10vh;"><a href="{{ url('product/'.$item->category->name.'/'.$item->product_name) }}" title="">{{ $item->product_name }}</a></h6>
                                     @if ($item->price != NULL)
                                     <p class="fs-lg fw-semibold text-primary mb-0">{{ $item->price }} <small>MAD</small></p>
