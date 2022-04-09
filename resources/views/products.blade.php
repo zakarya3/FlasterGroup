@@ -45,7 +45,7 @@
 								</div>
 								<div class="portfolio-card-footer">
 									<a class="full-screen" href="{{ asset('assets/uploads/products/images/'.$item->image) }}"  data-glightbox="" data-gallery="portfolio"><i class="ti-fullscreen"></i></a>
-									<h6 class="info-title"><a href="{{ url('product/'.$item->category->name.'/'.$item->product_name) }}" title="">{{ $item->product_name }}</a></h6>
+									<h6 class="info-title" style="height: 10vh;"><a href="{{ url('product/'.$item->category->name.'/'.$item->product_name) }}" title="">{{ $item->product_name }}</a></h6>
                                     @if ($item->price != NULL)
                                     <p class="fs-lg fw-semibold text-primary mb-0">{{ $item->price }} <small>MAD</small></p>
                                     @else
