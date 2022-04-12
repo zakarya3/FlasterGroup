@@ -1,11 +1,60 @@
 @extends('layouts.header')
 @section('content')
+
+<style>
+    .product-gallery{
+       width: 100%;
+       padding: 10px;
+    } 
+    .product-gallery .images-gallery{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .product-gallery .images-gallery .pic{
+        padding: 20px 15px;
+    }
+    .product-gallery .images-gallery .pic img{
+        width: 80%;
+        height: 20vh;
+        object-fit: contain;
+    }
+    @media(max-width: 768px){
+        .product-gallery .images-gallery .pic{
+        padding: 0;
+        }
+        .product-gallery .images-gallery .pic img{
+            width: 100%;
+        }
+    }
+
+</style>
 <section>
     <div class="container product_data">
         <div class="row mb-4" data-sticky-container>
             <!-- portfolio images -->
             <div class="col-md-8">
-                <a class="mb-4 d-block" href="{{ asset('assets/uploads/products/images/'.$product->image) }}" data-glightbox="" data-gallery="portfolio"><img src="{{ asset('assets/uploads/products/images/'.$product->image) }}" style="width: 60%" alt=""></a>
+                <a class="mb-4 d-block" style="display: flex !important; justify-content: center;" href="{{ asset('assets/uploads/products/images/'.$product->image) }}" data-glightbox="" data-gallery="portfolio"><img src="{{ asset('assets/uploads/products/images/'.$product->image) }}" style="width: 100%; height: 50vh; object-fit: contain;" alt=""></a>
+                <div class="product-gallery">
+                    <div class="images-gallery">
+                        @if ($product->image1 != NULL)
+                            <div class="pic"><a href="{{ asset('assets/uploads/products/images/'.$product->image1) }}"><img src="{{ asset('assets/uploads/products/images/'.$product->image1) }}" alt=""></a></div>
+                        @endif
+                        @if ($product->image2 != NULL)
+                            <div class="pic"><a href="{{ asset('assets/uploads/products/images/'.$product->image2) }}"><img src="{{ asset('assets/uploads/products/images/'.$product->image2) }}" alt=""></a></div>
+                        @endif
+                        @if ($product->image3 != NULL)
+                            <div class="pic"><a href="{{ asset('assets/uploads/products/images/'.$product->image3) }}"><img src="{{ asset('assets/uploads/products/images/'.$product->image3) }}" alt=""></a></div>
+                        @endif
+                        @if ($product->image4 != NULL)
+                            <div class="pic"><a href="{{ asset('assets/uploads/products/images/'.$product->image4) }}"><img src="{{ asset('assets/uploads/products/images/'.$product->image4) }}" alt=""></a></div>
+                        @endif
+                        @if ($product->image5 != NULL)
+                            <div class="pic"><a href="{{ asset('assets/uploads/products/images/'.$product->image5) }}"><img src="{{ asset('frontend/images/categories/video.jpeg') }}" alt=""></a></div>
+                        @endif
+                    </div>
+                </div>
             </div>
             <!-- portfolio details -->
             <div class="col-md-4">

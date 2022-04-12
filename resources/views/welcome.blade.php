@@ -40,18 +40,6 @@
                     </div>
                 </div>
             </div>
-            <!-- slide 3-->
-            <div class="h-100 bg-overlay-dark-2" style="background-image:url(frontend/images/categories/pole\ manutention.jpg); background-position: center center; background-size: cover;">
-                <div class="container h-100">
-                    <div class="row d-flex h-100">
-                        <div class="col-lg-8 col-xl-6 me-auto slider-content justify-content-center align-self-center align-items-start text-start">
-                            <h2 class="animate__animated animate__fadeInUp animate__delay-1s display-2 fw-bold text-white">Pole manutention :</h2>
-                            <h3 class="animate__animated animate__fadeInUp animate__delay-2s text-white display-7 alt-font fst-italic mb-2 my-md-4">Rayonnage industrielle et commerciale, Matériel de manutention (Chariot élévateur et gerbeurs)</h3>
-                            <div class="animate__animated animate__fadeInUp animate__delay-3s mt-3 dealy-1500"><a href="{{ url('contact') }}" class="btn btn-grad">Contactez-nous!</a></div>
-                        </div>
-                    </div>
-                </div>
-            </div>
             <!-- slide 4-->
             <div class="h-100 bg-overlay-dark-2" style="background-image:url(frontend/images/categories/pole\ ingenus.jpg); background-position: center top; background-size: cover;">
                 <div class="container h-100">
