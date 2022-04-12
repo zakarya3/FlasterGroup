@@ -91,18 +91,20 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="accordion-item">
-                            <h2 class="accordion-header" id="heading5">
-                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse5" aria-expanded="false" aria-controls="collapse5">
-                                    La marque
-                                </button>
-                            </h2>
-                            <div id="collapse5" class="accordion-collapse collapse" aria-labelledby="heading5" data-bs-parent="#accordionExample2">
-                                <div class="accordion-body">
-                                    <img src="{{ asset('assets/uploads/brands/images/'.$product->brand->image) }}" alt="">
+                        @if ($product->brand->image)
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="heading5">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse5" aria-expanded="false" aria-controls="collapse5">
+                                        La marque
+                                    </button>
+                                </h2>
+                                <div id="collapse5" class="accordion-collapse collapse" aria-labelledby="heading5" data-bs-parent="#accordionExample2">
+                                    <div class="accordion-body">
+                                        <img src="{{ asset('assets/uploads/brands/images/'.$product->brand->image) }}" alt="">
+                                    </div>
                                 </div>
                             </div>
-                        </div>
+                        @endif
                     </div>
                     
                     <form action="{{ route('cart.store') }}" method="post" enctype="multipart/form-data">
