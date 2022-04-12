@@ -135,8 +135,8 @@ service -->
             <div class="col-md-4 mt-30">
                 <div class="feature-box f-style-2 icon-grad h-100" style="background-image:linear-gradient(to bottom, rgba(0, 0, 0, 0.455), rgba(0, 0, 0, 0)),  url({{ asset('frontend/images/categories/manut.jpg') }}); background-position: center; background-repeat: no-repeat; background-size: cover; color: #fff !important;">
                     <div class="feature-box-icon"><i class="ti-ruler-pencil"></i></div>
-                    <h3 class="feature-box-title" style="color: #fff;">Pole manutention</h3>
-                    <p class="feature-box-desc">Rayonnage industrielle et commerciale, Matériel de manutention (Chariot élévateur et gerbeurs) </p>
+                    <h3 class="feature-box-title" style="color: #fff;">Pole Industrie</h3>
+                    <p class="feature-box-desc">Machine industriel, Solutions de manutention o solutions de stockage </p>
                     <a class="mt-3" href="{{ url('contact') }}">Know more!</a>
                 </div>
             </div>
