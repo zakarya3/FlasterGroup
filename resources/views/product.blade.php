@@ -80,6 +80,7 @@
                     @endphp</p>
                     <div class="accordion accordion-icon-primary" id="accordionExample2">
                         <div class="accordion-item">
+                            @if ($product->product_reference !== null)
                             <h2 class="accordion-header" id="heading4">
                                 <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapse4" aria-expanded="true" aria-controls="collapse4">
                                      Référence
@@ -91,7 +92,8 @@
                                 </div>
                             </div>
                         </div>
-                        @if ($product->brand->image)
+                            @endif
+                        @if ($product->brand_id !== null)
                             <div class="accordion-item">
                                 <h2 class="accordion-header" id="heading5">
                                     <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse5" aria-expanded="false" aria-controls="collapse5">

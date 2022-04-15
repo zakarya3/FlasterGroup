@@ -84,7 +84,7 @@
 						<div class="dropdown">
 						  <a class="dropdown-toggle" href="#" role="button" id="dropdownAccount" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="ti-user me-2"></i>Account </a>
 						  <div class="dropdown-menu mt-2 shadow" aria-labelledby="dropdownAccount">
-						    <a class="dropdown-item" href="{{ route('login') }}">Log In</a>
+						    <a class="dropdown-item" href="{{ url('/dashboard') }}">Log In</a>
 						    <a class="dropdown-item" href="{{ route('register') }}">Register</a>
 						  </div>
 						</div>

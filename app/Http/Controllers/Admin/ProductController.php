@@ -33,35 +33,35 @@ class ProductController extends Controller
         if ($request->hasFile('image1')) {
             $file = $request->file('image1');
             $ext = $file->getClientOriginalExtension();
-            $filename = time().'.'.$ext;
+            $filename = time().'1.'.$ext;
             $file->move('assets/uploads/products/images/',$filename);
             $products->image1 = $filename;
         }
         if ($request->hasFile('image2')) {
             $file = $request->file('image2');
             $ext = $file->getClientOriginalExtension();
-            $filename = time().'.'.$ext;
+            $filename = time().'2.'.$ext;
             $file->move('assets/uploads/products/images/',$filename);
             $products->image2 = $filename;
         }
         if ($request->hasFile('image3')) {
             $file = $request->file('image3');
             $ext = $file->getClientOriginalExtension();
-            $filename = time().'.'.$ext;
+            $filename = time().'3.'.$ext;
             $file->move('assets/uploads/products/images/',$filename);
             $products->image3 = $filename;
         }
         if ($request->hasFile('image4')) {
             $file = $request->file('image4');
             $ext = $file->getClientOriginalExtension();
-            $filename = time().'.'.$ext;
+            $filename = time().'4.'.$ext;
             $file->move('assets/uploads/products/images/',$filename);
             $products->image4 = $filename;
         }
         if ($request->hasFile('image5')) {
             $file = $request->file('image5');
             $ext = $file->getClientOriginalExtension();
-            $filename = time().'.'.$ext;
+            $filename = time().'5.'.$ext;
             $file->move('assets/uploads/products/images/',$filename);
             $products->image5 = $filename;
         }
@@ -82,12 +82,12 @@ class ProductController extends Controller
         $products->save();
         return redirect('/products')->with('status'," Product Added Successfully");
     }
-
     public function edit($id)
     {
         $products = Product::find($id);
         $category = SubCategory::all();
-        return view('admin.products.edit',compact('products','category'));
+        $brand = Brand::all();
+        return view('admin.products.edit',compact('products','category','brand'));
     }
     public function update(Request $request, $id)
     {
@@ -95,9 +95,9 @@ class ProductController extends Controller
 
         if ($request->hasFile('image')) {
             $path = 'assets/uploads/products/images/'.$products->image;
-            // if (File::exists($path)) {
-            //     File::delete($path);
-            // }
+            if (File::exists($path)) {
+                File::delete($path);
+            }
             $file = $request->file('image');
             $ext = $file->getClientOriginalExtension();
             $filename = time().'.'.$ext;
@@ -105,57 +105,57 @@ class ProductController extends Controller
             $products->image = $filename;
         }
         if ($request->hasFile('image1')) {
-            $path = 'assets/uploads/products/images/'.$products->image;
-            // if (File::exists($path)) {
-            //     File::delete($path);
-            // }
+            $path = 'assets/uploads/products/images/'.$products->image1;
+            if (File::exists($path)) {
+                File::delete($path);
+            }
             $file = $request->file('image1');
             $ext = $file->getClientOriginalExtension();
-            $filename = time().'.'.$ext;
+            $filename = time().'1.'.$ext;
             $file->move('assets/uploads/products/images/',$filename);
             $products->image1 = $filename;
         }
         if ($request->hasFile('image2')) {
-            $path = 'assets/uploads/products/images/'.$products->image;
-            // if (File::exists($path)) {
-            //     File::delete($path);
-            // }
+            $path = 'assets/uploads/products/images/'.$products->image2;
+            if (File::exists($path)) {
+                File::delete($path);
+            }
             $file = $request->file('image2');
             $ext = $file->getClientOriginalExtension();
-            $filename = time().'.'.$ext;
+            $filename = time().'2.'.$ext;
             $file->move('assets/uploads/products/images/',$filename);
             $products->image2 = $filename;
         }
         if ($request->hasFile('image3')) {
-            $path = 'assets/uploads/products/images/'.$products->image;
-            // if (File::exists($path)) {
-            //     File::delete($path);
-            // }
+            $path = 'assets/uploads/products/images/'.$products->image3;
+            if (File::exists($path)) {
+                File::delete($path);
+            }
             $file = $request->file('image3');
             $ext = $file->getClientOriginalExtension();
-            $filename = time().'.'.$ext;
+            $filename = time().'3.'.$ext;
             $file->move('assets/uploads/products/images/',$filename);
             $products->image3 = $filename;
         }
         if ($request->hasFile('image4')) {
-            $path = 'assets/uploads/products/images/'.$products->image;
-            // if (File::exists($path)) {
-            //     File::delete($path);
-            // }
+            $path = 'assets/uploads/products/images/'.$products->image4;
+            if (File::exists($path)) {
+                File::delete($path);
+            }
             $file = $request->file('image4');
             $ext = $file->getClientOriginalExtension();
-            $filename = time().'.'.$ext;
+            $filename = time().'4.'.$ext;
             $file->move('assets/uploads/products/images/',$filename);
             $products->image4 = $filename;
         }
         if ($request->hasFile('image5')) {
-            $path = 'assets/uploads/products/images/'.$products->image;
-            // if (File::exists($path)) {
-            //     File::delete($path);
-            // }
+            $path = 'assets/uploads/products/images/'.$products->image5;
+            if (File::exists($path)) {
+                File::delete($path);
+            }
             $file = $request->file('image5');
             $ext = $file->getClientOriginalExtension();
-            $filename = time().'.'.$ext;
+            $filename = time().'5.'.$ext;
             $file->move('assets/uploads/products/images/',$filename);
             $products->image5 = $filename;
         }
@@ -182,6 +182,7 @@ class ProductController extends Controller
             $products->product_brand = $filename;
         }
         $products->cate_id = $request->input('cate_id');
+        $products->brand_id = $request->input('brand');
         $products->product_name = $request->input('title');
         $products->product_description = $request->input('description');
         $products->qty = $request->input('qty');

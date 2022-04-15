@@ -53,7 +53,7 @@
                                     @else
                                     <p class="fs-lg fw-semibold text-primary mb-0">Contactez-nous</p>
                                     @endif
-									<p>{{ $item->brand->brand_name }}, {{ $item->category->name }}</p>
+									<p>@if ($item->brand_id !== null){{ $item->brand->brand_name }}, @endif{{ $item->category->name }}</p>
                                     <form action="{{ route('cart.store') }}" style="width: 100%" method="post" enctype="multipart/form-data">
                                         @csrf
                                         <input type="hidden" value="{{ $item->id }}" name="id">
