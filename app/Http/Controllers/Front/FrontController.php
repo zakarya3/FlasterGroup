@@ -21,7 +21,8 @@ class FrontController extends Controller
     public function index()
     {
         $cartItems = \Cart::getContent();
-        return view('welcome', compact('cartItems'));
+        $references = Reference::all();
+        return view('welcome', compact('cartItems','references'));
     }
 
     public function category()

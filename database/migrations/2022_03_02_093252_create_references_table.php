@@ -15,10 +15,10 @@ return new class extends Migration
     {
         Schema::create('references', function (Blueprint $table) {
             $table->id();
-            $table->date('date');
-            $table->string('title');
-            $table->bigInteger('categ_id');
-            $table->text('description');
+            $table->date('date')->unique();
+            $table->string('title')->unique();
+            $table->bigInteger('categ_id')->unique();
+            $table->text('description')->unique();
             $table->string('image');
             $table->timestamps();
         });

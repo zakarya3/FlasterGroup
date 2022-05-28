@@ -170,57 +170,19 @@ portfolio -->
             <div class="col-md-12 p-0">
                 <div class="portfolio-wrap grid items-3 items-padding">
                     <!-- portfolio-card -->
-                    <div class="portfolio-card isotope-item digital">
-                        <div class="portfolio-card-body">
-                            <div class="portfolio-card-header" style="height: 35vh;">
-                                <img src="frontend/images/references/5.jpg" alt="">
-                            </div>
-                            <div class="portfolio-card-footer">
-                                <a class="full-screen" href="frontend/images/references/5.jpg" data-glightbox="" data-gallery="portfolio"><i class="ti-fullscreen"></i></a>
-                                <h6 class="info-title"><a href="#" title="">Ibn Zohr University</a></h6>
-                                <p>University</p>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- portfolio-card -->
-                    <div class="portfolio-card isotope-item digital">
-                        <div class="portfolio-card-body">
-                            <div class="portfolio-card-header" style="height: 35vh;">
-                                <img src="frontend/images/references/5.jpg" alt="">
-                            </div>
-                            <div class="portfolio-card-footer">
-                                <a class="full-screen" href="frontend/images/references/5.jpg" data-glightbox="" data-gallery="portfolio"><i class="ti-fullscreen"></i></a>
-                                <h6 class="info-title"><a href="#" title="">Ibn Zohr University</a></h6>
-                                <p>University</p>
+                    @foreach ($references as $item)
+                        <div class="portfolio-card isotope-item digital">
+                            <div class="portfolio-card-body">
+                                <div class="portfolio-card-header" style="height: 35vh;">
+                                    <img src="{{ asset('assets/uploads/references/images/'.$item->image) }}" style="width: 90%" alt="">
+                                </div>
+                                <div class="portfolio-card-footer">
+                                    <a class="full-screen" href="{{ asset('assets/uploads/references/images/'.$item->image) }}" data-glightbox="" data-gallery="portfolio"><i class="ti-fullscreen"></i></a>
+                                    <h6 class="info-title"><a href="#" title="">{{ $item->title }}</a></h6>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <!-- portfolio-card -->
-                    <div class="portfolio-card isotope-item digital">
-                        <div class="portfolio-card-body">
-                            <div class="portfolio-card-header" style="height: 35vh;">
-                                <img src="frontend/images/references/5.jpg" alt="">
-                            </div>
-                            <div class="portfolio-card-footer">
-                                <a class="full-screen" href="frontend/images/references/5.jpg" data-glightbox="" data-gallery="portfolio"><i class="ti-fullscreen"></i></a>
-                                <h6 class="info-title"><a href="#" title="">Ibn Zohr University</a></h6>
-                                <p>University</p>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- portfolio-card -->
-                    <div class="portfolio-card isotope-item digital">
-                        <div class="portfolio-card-body">
-                            <div class="portfolio-card-header" style="height: 35vh;">
-                                <img src="frontend/images/references/5.jpg" alt="">
-                            </div>
-                            <div class="portfolio-card-footer">
-                                <a class="full-screen" href="frontend/images/references/5.jpg" data-glightbox="" data-gallery="portfolio"><i class="ti-fullscreen"></i></a>
-                                <h6 class="info-title"><a href="#" title="">Ibn Zohr University</a></h6>
-                                <p>University</p>
-                            </div>
-                        </div>
-                    </div>						
+                    @endforeach				
                 </div>
                 <!-- portfolio wrap -->
             </div>

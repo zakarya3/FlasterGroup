@@ -16687,7 +16687,7 @@ header.navbar-sticky-on .navbar-brand {
   padding-bottom: 14px;
 }
 header.navbar-sticky-on .navbar-brand .navbar-brand-item {
-  height: 34px;
+  height: 60px;
 }
 
 .navbar-top {
@@ -16773,7 +16773,7 @@ header.navbar-sticky-on .navbar-brand .navbar-brand-item {
 }
 
 .navbar-brand .navbar-brand-item {
-  height: 60px;
+  height: 90px;
   display: block;
   width: auto;
 }
@@ -18273,7 +18273,7 @@ header.navbar-sticky-on .navbar-brand {
   padding-bottom: 14px;
 }
 header.navbar-sticky-on .navbar-brand .navbar-brand-item {
-  height: 34px;
+  height: 60px;
 }
 
 @media (max-width: 767.98px) {
@@ -18282,7 +18282,7 @@ header.navbar-sticky-on .navbar-brand .navbar-brand-item {
   }
 
   .navbar-brand .navbar-brand-item {
-    height: 30px;
+    height: 60px;
   }
 
   header .search i {

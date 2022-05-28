@@ -14,7 +14,7 @@
                     @csrf
                     <div class="row">
                       <label for="">Categorie</label>
-                      <select class="form-select" required name="categ_id">
+                      <select class="form-select"  name="categ_id">
                           <option value="">Select a category</option>
                           @foreach ($category as $item)
                           <option value="{{ $item->id }}">{{ $item->name }}</option>
@@ -26,13 +26,13 @@
                       <div class="col-md-6">
                         <div class="form-group">
                           <label class="bmd-label-floating">Titre du Référence</label>
-                          <input type="text" name="title" required class="form-control">
+                          <input type="text" name="title"  class="form-control">
                         </div>
                       </div>
                       <div class="col-md-6">
                         <div class="form-group">
                           <label class="bmd-label-floating">Date</label>
-                          <input type="date" name="date" required class="form-control">
+                          <input type="date" name="date"  class="form-control">
                         </div>
                       </div>
                     </div>
