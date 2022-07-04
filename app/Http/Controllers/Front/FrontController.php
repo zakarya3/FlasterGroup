@@ -37,7 +37,7 @@ class FrontController extends Controller
             $category = SubCategory::where('name',$name)->first();
             $id = $category->id;
             $brand = Brand::all();
-            $product = Product::where('cate_id',$id)->paginate(12);
+            $product = Product::where('cate_id',$id)->orderBy('id', 'desc')->paginate(12);
             $cartItems = \Cart::getContent();
             return view('products',compact('product','brand','cartItems'));
 
@@ -47,7 +47,7 @@ class FrontController extends Controller
     public function products_id($id)
     {
         $type = SubCategory::where('categ_id',$id)->pluck('id');
-        $product = Product::whereIn('cate_id',$type)->paginate(12);
+        $product = Product::whereIn('cate_id',$type)->orderBy('id', 'desc')->paginate(12);
         $cartItems = \Cart::getContent();
         return view('products',compact('product','cartItems'));
     }
@@ -58,7 +58,7 @@ class FrontController extends Controller
         $category = SubCategory::where('name',$cate)->first();
         $id = $category->id;
         $other_prd = Product::where('cate_id',$id)->get()->take(3);
-        $product = Product::where('product_name',$name)->first();
+        $product = Product::where('product_name',$name)->orderBy('id', 'desc')->first();
         $cartItems = \Cart::getContent();
         return view('product', compact('product','other_prd','cartItems'));
     
@@ -79,7 +79,7 @@ class FrontController extends Controller
         $message1 = $request->message;
         $data = ['name'=> $name, 'phone'=> $phone, 'email'=> $email, 'subject'=> $subject, 'message1'=> $message1];
         Mail::send('message', $data, function ($message) use ($email) {
-            $message->to('zakaria.aanni@gmail.com');
+            $message->to('info@flaster.ma');
             $message->subject('Question?');
         });
         return redirect()->back();
@@ -104,7 +104,7 @@ class FrontController extends Controller
 
         Mail::send('admin-cata', $data, function ($message) use ($email) {
             $message->from($email);
-            $message->to('zakaria.aanni@gmail.com');
+            $message->to('info@flaster.ma');
             $message->subject('Téléchargement du catalogue');
         });
         return redirect()->back();

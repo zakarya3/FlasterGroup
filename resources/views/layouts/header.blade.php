@@ -70,7 +70,7 @@
 						<!-- Top info -->
 						<ul class="nav list-unstyled ms-3">
 							<li class="nav-item me-3">
-								<a class="navbar-link" href="tel:+212528232329 "><strong>Phone:</strong> ((+212)5 28 23 23 29 </a>
+								<a class="navbar-link" href="tel:+212528232329 "><strong>Phone:</strong> (+212)5 28 23 23 29 </a>
 							</li>
 							<li class="nav-item me-3">
 								<a class="navbar-link" href="mail:info@flaster.ma"><strong>Email:</strong> info@flaster.ma</a>
