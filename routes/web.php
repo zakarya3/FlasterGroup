@@ -89,6 +89,8 @@ Route::middleware(['auth', 'isAdmin'])->group(function () {
     Route::get('edit-prd/{id}', [ProductController::class,'edit']);
     Route::get('delete-prd/{id}', [ProductController::class,'destroy']);
     Route::put('update-product/{id}',[ProductController::class,'update'] );
+    Route::get('refuse/{id}',[ProductController::class,'refuse'] );
+    Route::get('accept/{id}',[ProductController::class,'accept'] );
     
     Route::get('brands', [BrandController::class, 'index']);
     Route::post('insert-brand', [BrandController::class,'insert']);

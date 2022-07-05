@@ -154,9 +154,14 @@
                               <img src="{{ asset('assets/uploads/products/images/'.$item->image) }}" class="cate-image" style="width: 60%" alt="image here">
                             </td>
                             <td>
-                              @if (Auth::user()->role_as == 1 || Auth::user()->role_as == 3)
+                              @if (Auth::user()->role_as == 1)
                               <a href="{{ url('edit-prd/'.$item->id) }}" class="btn btn-primary pull-righ">Modifier</a>
                               <a href="{{ url('delete-prd/'.$item->id) }}" class="btn bg-danger pull-righ" style="color: white">Supprimer</a>
+                              @if ($item->status==1)
+                              <a href="{{ url('refuse/'.$item->id) }}" class="btn bg-warning pull-righ" style="color: white">Annuler</a>
+                              @else
+                              <a href="{{ url('accept/'.$item->id) }}" class="btn bg-success pull-righ" style="color: white">Approver</a>
+                              @endif
                               @endif
                             </td>
                           </tr>

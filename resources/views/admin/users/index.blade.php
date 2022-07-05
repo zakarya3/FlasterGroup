@@ -35,8 +35,6 @@
                                   Stagiaire
                                   @elseif ($item->role_as == 0)
                                   Client
-                                    @elseif ($item->role_as == 2)
-                                    Station
                             @endif
                           </td>
                         <td>

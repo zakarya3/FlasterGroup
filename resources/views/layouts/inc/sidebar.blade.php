@@ -9,7 +9,7 @@
       </a></div>
     <div class="sidebar-wrapper">
       <ul class="nav">
-        @if (Auth::user()->role_as == 1 || Auth::user()->role_as == 3)
+        @if (Auth::user()->role_as == 1 || Auth::user()->role_as == 3 || Auth::user()->role_as == 4)
         <li class="nav-item {{ Request::is('dashboard') ? 'active':'' }}  ">
           <a class="nav-link " href="/dashboard">
             <i class="material-icons">dashboard</i>
@@ -17,6 +17,7 @@
           </a>
         </li>
         @endif
+        @if (Auth::user()->role_as == 1)
         <li class="nav-item {{ Request::is('categories') ? 'active':'' }}">
           <a class="nav-link " href="{{ url('categories') }}">
             <i class="material-icons">category</i>
@@ -35,13 +36,16 @@
             <p>Marques</p>
           </a>
         </li>
+        @endif
+        @if (Auth::user()->role_as == 1 || Auth::user()->role_as == 3 || Auth::user()->role_as == 4)
         <li class="nav-item {{ Request::is('products') ? 'active':'' }}">
           <a class="nav-link" href="{{ url('products') }}">
             <i class="material-icons">article</i>
             <p>Produits</p>
           </a>
         </li>
-        @if (Auth::user()->role_as == 1 || Auth::user()->role_as == 3)
+        @endif
+        @if (Auth::user()->role_as == 1)
         <li class="nav-item {{ Request::is('reference') ? 'active':'' }}">
           <a class="nav-link" href="{{ url('reference') }}">
             <i class="material-icons">room_preferences</i>
@@ -54,8 +58,6 @@
             <p>Commandes</p>
           </a>
         </li>
-        @endif
-        @if (Auth::user()->role_as == 1)
         <li class="nav-item {{ Request::is('users') ? 'active':'' }}">
           <a class="nav-link" href="{{ url('users') }}">
             <i class="material-icons">person</i>

@@ -230,4 +230,20 @@ class ProductController extends Controller
         $products->delete();
         return redirect('/products')->with('status'," Product Deleted Successfully");
     }
+
+    public function refuse($id)
+    {
+        $products = Product::find($id);
+        $products->status = false;
+        $products->update();
+        return redirect('/products')->with('status'," Product Deleted Successfully");
+    }
+
+    public function accept($id)
+    {
+        $products = Product::find($id);
+        $products->status = true;
+        $products->update();
+        return redirect('/products')->with('status'," Product Deleted Successfully");
+    }
 }

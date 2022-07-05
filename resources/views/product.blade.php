@@ -35,23 +35,26 @@
         <div class="row mb-4" data-sticky-container>
             <!-- portfolio images -->
             <div class="col-md-8">
-                <a class="mb-4 d-block" style="display: flex !important; justify-content: center;" href="{{ asset('assets/uploads/products/images/'.$product->image) }}" data-glightbox="" data-gallery="portfolio"><img src="{{ asset('assets/uploads/products/images/'.$product->image) }}" style="width: 100%; height: 50vh; object-fit: contain;" alt=""></a>
+                <img src="{{ asset('assets/uploads/products/images/'.$product->image) }}" class="pro-img" style="width: 100%; height: 50vh; object-fit: contain;" alt="">
                 <div class="product-gallery">
                     <div class="images-gallery">
+                        @if ($product->image != NULL)
+                            <div class="pic" onclick="changeImage(this)"><img src="{{ asset('assets/uploads/products/images/'.$product->image) }}" alt=""></div>
+                        @endif
                         @if ($product->image1 != NULL)
-                            <div class="pic"><a href="{{ asset('assets/uploads/products/images/'.$product->image1) }}"><img src="{{ asset('assets/uploads/products/images/'.$product->image1) }}" alt=""></a></div>
+                            <div class="pic" onclick="changeImage(this)"><img src="{{ asset('assets/uploads/products/images/'.$product->image1) }}" alt=""></div>
                         @endif
                         @if ($product->image2 != NULL)
-                            <div class="pic"><a href="{{ asset('assets/uploads/products/images/'.$product->image2) }}"><img src="{{ asset('assets/uploads/products/images/'.$product->image2) }}" alt=""></a></div>
+                            <div class="pic" onclick="changeImage(this)"><img src="{{ asset('assets/uploads/products/images/'.$product->image2) }}" alt=""></div>
                         @endif
                         @if ($product->image3 != NULL)
-                            <div class="pic"><a href="{{ asset('assets/uploads/products/images/'.$product->image3) }}"><img src="{{ asset('assets/uploads/products/images/'.$product->image3) }}" alt=""></a></div>
+                            <div class="pic" onclick="changeImage(this)"><img src="{{ asset('assets/uploads/products/images/'.$product->image3) }}" alt=""></div>
                         @endif
                         @if ($product->image4 != NULL)
-                            <div class="pic"><a href="{{ asset('assets/uploads/products/images/'.$product->image4) }}"><img src="{{ asset('assets/uploads/products/images/'.$product->image4) }}" alt=""></a></div>
+                            <div class="pic" onclick="changeImage(this)"><img src="{{ asset('assets/uploads/products/images/'.$product->image4) }}" alt=""></div>
                         @endif
                         @if ($product->image5 != NULL)
-                            <div class="pic"><a href="{{ asset('assets/uploads/products/images/'.$product->image5) }}"><img src="{{ asset('frontend/images/categories/video.jpeg') }}" alt=""></a></div>
+                            <div class="pic" onclick="changeImage(this)"><img src="{{ asset('assets/uploads/products/images/'.$product->image5) }}" alt=""></div>
                         @endif
                     </div>
                 </div>
@@ -128,6 +131,12 @@
             <!-- portfolio details End -->
         </div>
     </div>
+
+    <script>
+        function changeImage(event) { 
+            document.querySelector(".pro-img").src=event.children[0].src
+         }
+    </script>
     <!-- portfolio End -->
 </section>
 @endsection

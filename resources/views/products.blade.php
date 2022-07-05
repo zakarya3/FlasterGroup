@@ -38,7 +38,8 @@
 					<div class="portfolio-wrap grid items-4 items-padding filter-container" data-isotope='{ "layoutMode": "masonry" }'>
 						<!-- portfolio-card -->
                         @foreach ($product as $item)
-                        <div class="portfolio-card grid-item digital">
+						@if ($item->status==1)
+						<div class="portfolio-card grid-item digital">
 							<div class="portfolio-card-body">
 								<div class="" style="height: 35vh;">
 									<a href="{{ url('product/'.$item->category->name.'/'.$item->product_name) }}">
@@ -70,6 +71,7 @@
 								</div>
 							</div>
 						</div>
+						@endif
                         @endforeach
 					</div>
 					<!-- portfolio wrap -->

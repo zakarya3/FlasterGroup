@@ -29,6 +29,7 @@ return new class extends Migration
             $table->string('qty')->nullable();
             $table->string('product_reference')->nullable();
             $table->float('price')->nullable();
+            $table->boolean('status')->default(0);
             $table->timestamps();
         });
     }
