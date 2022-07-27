@@ -27,9 +27,11 @@ Portfolio -->
                     @foreach ($category as $cat)
                     <div class="portfolio-card grid-item digital">
                         <div class="portfolio-card-body">
-                            <div class="portfolio-card-header" style="height: 25vh">
-                                <img src="{{ asset('assets/uploads/categories/images/'.$cat->image) }}" style="height: 100%" alt="">
-                            </div>
+                            <a href="{{ url('products/products-items/'.$cat->id) }}">
+                                <div class="portfolio-card-header" style="height: 25vh">
+                                    <img src="{{ asset('assets/uploads/categories/images/'.$cat->image) }}" style="height: 100%" alt="">
+                                </div>
+                            </a>
                             <div class="portfolio-card-footer">
                                 <a class="full-screen" href="{{ asset('assets/uploads/categories/images/'.$cat->image) }}"  data-glightbox="" data-gallery="portfolio"><i class="ti-fullscreen"></i></a>
                                 <h6 class="info-title"><a href="{{ url('products/products-items/'.$cat->id) }}" title="">{{ $cat->name }}</a></h6>
