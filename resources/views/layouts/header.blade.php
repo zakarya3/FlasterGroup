@@ -215,7 +215,7 @@
 					</div>
 					<!-- Footer widget 2 -->
 					<div class="col-md-3 col-sm-6">
-						<div class="widget address" style="background-image: url('assets/images/world-map.png'); background-position: 50% 20px; background-repeat: no-repeat; background-size: contain;">
+						<div class="widget address">
 							<ul class="list-group list-group-borderless">
 								<li class="d-flex mb-3"><i class="me-3 display-8 ti-map-alt"></i>Bureau N 1 .Av Prince Abdelkader N 78 Cite Almassira Agadir. </li>
 								<li class="d-flex mb-3"><i class="me-3 display-8 ti-map-alt"></i>SIÉGÉ SOCIALE/ USINE: IMM A133 N°7 GH 117 RCE DU GOLF KENITRA </li>
