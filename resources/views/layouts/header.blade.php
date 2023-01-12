@@ -14,7 +14,7 @@
 	<link rel="shortcut icon" href="{{ asset('frontend/images/logo/icon.png') }}">
 
 	<!-- Google Font -->
-	<link rel="stylesheet" href="{{ asset('frontend/css/fontawesome.min.css') }}">
+	{{-- <link rel="stylesheet" href="{{ asset('frontend/css/fontawesome.min.css') }}"> --}}
 	<link rel="stylesheet" href="{{ asset('frontend/css/all.min.css') }}">
 
 	<!-- Plugins CSS -->
@@ -118,7 +118,7 @@
 				<!-- Logo -->
 				<a class="navbar-brand" href="{{ url('/') }}">
 					<!-- Logo -->
-					<img class="navbar-brand-item" src="{{ asset('frontend/images/logo/logo.png') }}" alt="Logo">
+					<img class="navbar-brand-item" src="{{ asset('frontend/images/logo/logo.webp') }}" width="100" height="100" alt="Logo">
 				</a>
 				<!-- Menu opener button -->
 				<button class="navbar-toggler ms-auto" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
@@ -206,7 +206,7 @@
 						<div class="widget">
 							<a href="index.html" class="footer-logo">
 								<!-- footer logo Start -->
-								<img class="footer-logo-item" style="height: 100px !important;" src="{{ asset('frontend/images/logo/logo.png') }}" alt="">
+								<img class="footer-logo-item" style="height: 100px !important;" src="{{ asset('frontend/images/logo/logo.webp') }}" alt="">
 								<!-- footer logo End -->
 							</a>
 							<p class="mt-3">FOURNITURE DU MATÉRIEL SCIENTIFIQUE, INDUSTRIELLE ET AGROALIMENTAIRE

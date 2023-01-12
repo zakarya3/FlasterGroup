@@ -4,7 +4,7 @@
     <div class="tiny-slider arrow-dark arrow-large arrow-transparent arrow-hover">
         <div class="tiny-slider-inner h-400 h-lg-700" data-autoplay="true" data-autoplaytime="7000" data-gutter="0" data-arrow="true" data-dots="false" data-items="1">
             <!-- slide 1-->
-            <div class="h-100 bg-overlay-dark-2" style="background-image:url(frontend/images/categories/pole\ labtech.jpg); background-position: center center; background-size: cover;">
+            <div class="h-100 bg-overlay-dark-2" width="100" height="100"  style="background-image:url({{ asset('frontend/images/categories/pole-labtech.webp') }}); background-position: center center; background-size: cover;">
                 <div class="container h-100">
                     <div class="row d-flex h-100">
                         <div class="col-lg-8 col-xl-6 me-auto slider-content justify-content-center align-self-center align-items-start text-start">
@@ -15,7 +15,7 @@
                     </div>
                 </div>
             </div>
-            <div class="h-100 bg-overlay-dark-2" style="background-image:url(frontend/images/categories/industrie.jpg); background-position: center center; background-size: cover;">
+            <div class="h-100 bg-overlay-dark-2" width="100" height="100"  style="background-image:url({{ asset('frontend/images/categories/industrie.webp') }}); background-position: center center; background-size: cover;">
                 <div class="container h-100">
                     <div class="row d-flex h-100">
                         <div class="col-lg-8 col-xl-6 me-auto slider-content justify-content-center align-self-center align-items-start text-start">
@@ -27,7 +27,7 @@
                 </div>
             </div>
             <!-- slide 2-->
-            <div class="h-100 bg-overlay-dark-2" style="background-image:url(frontend/images/categories/pole\ agrotech.jpg); background-position: center top; background-size: cover;">
+            <div class="h-100 bg-overlay-dark-2" width="100" height="100"  style="background-image:url({{ asset('frontend/images/categories/pole-agrotech.webp') }}); background-position: center top; background-size: cover;">
                 <div class="container h-100">
                     <div class="row d-flex h-100">
                         <div class="col-md-8 justify-content-center align-self-center align-items-start mx-auto">
@@ -41,7 +41,7 @@
                 </div>
             </div>
             <!-- slide 4-->
-            <div class="h-100 bg-overlay-dark-2" style="background-image:url(frontend/images/categories/pole\ ingenus.jpg); background-position: center top; background-size: cover;">
+            <div class="h-100 bg-overlay-dark-2" width="100" height="100"  style="background-image:url({{ asset('frontend/images/categories/pole-ingenus.webp') }}); background-position: center top; background-size: cover;">
                 <div class="container h-100">
                     <div class="row d-flex h-100">
                         <div class="col-md-8 justify-content-center align-self-center align-items-start mx-auto">
@@ -69,10 +69,10 @@ about us  -->
                 <div class="col-md-6">
                     <div class="row mt-4 mt-md-0">
                         <div class="col-5 offset-1 px-2 mb-3 align-self-end">
-                            <img class="rounded aos" data-aos="fade-up" data-aos-delay="200" data-aos-duration="1000" data-aos-easing="ease-in-out" src="{{ asset('frontend/images/categories/industrie.jpg') }}" alt="">
+                            <img class="rounded aos" data-aos="fade-up" data-aos-delay="200" data-aos-duration="1000" data-aos-easing="ease-in-out" width="auto" height="auto"  src="{{ asset('frontend/images/categories/industrie.webp') }}" alt="">
                         </div>
                         <div class="col-6 px-2 mb-3">
-                            <img class="rounded aos" data-aos="fade-right" data-aos-delay="200" data-aos-duration="1000" src="{{ asset('frontend/images/categories/Peel-3D-scanner-Hero.jpg') }}" alt="">
+                            <img class="rounded aos" data-aos="fade-right" data-aos-delay="200" data-aos-duration="1000" width="auto" height="auto"  src="{{ asset('frontend/images/categories/Peel-3D-scanner-Hero.webp') }}" alt="">
                         </div>
                         <div class="col-7 px-2 mb-3">
                             <div class="rounded aos bg-grad p-2 p-sm-3 p-lg-4 p-xl-5 all-text-white" data-aos="fade-left" data-aos-delay="300" data-aos-duration="1500">
@@ -81,7 +81,7 @@ about us  -->
                             </div>
                         </div>
                         <div class="col-5 align-self-start ps-2 mb-3">
-                            <img class="rounded aos" data-aos="fade-down" data-aos-delay="300" data-aos-duration="1500" src="{{ asset('frontend/images/categories/serre2.jpeg') }}" alt="">
+                            <img class="rounded aos" data-aos="fade-down" data-aos-delay="300" data-aos-duration="1500" width="auto" height="auto"  src="{{ asset('frontend/images/categories/serre2_1.webp') }}" alt="">
                         </div>
                     </div>
                 </div>
@@ -117,7 +117,7 @@ service -->
         </div>
         <div class="row" style="justify-content: center;">
             <div class="col-md-4 mt-30">
-                <div class="feature-box f-style-2 icon-grad h-100" style="background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.455), rgba(0, 0, 0, 0)),  url({{ asset('frontend/images/categories/Couverture2-min.jpeg') }}); background-position: center; background-repeat: no-repeat; background-size: cover; color: #fff !important;">
+                <div class="feature-box f-style-2 icon-grad h-100" width="100" height="100"  style="background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.455), rgba(0, 0, 0, 0)),  url({{ asset('frontend/images/categories/Couverture2-min.webp') }}); background-position: center; background-repeat: no-repeat; background-size: cover; color: #fff !important;">
                     <div class="feature-box-icon"><i class="ti-reddit"></i></div>
                     <h3 class="feature-box-title" style="color: #fff;">Pole Labtech</h3>
                     <p class="feature-box-desc">Matériel scientifique et technique de laboratoire, Matériel de laboratoire, produits chimique, matériel didactique et banc d'essai et matériel de mesure de haute précision.. </p>
@@ -125,7 +125,7 @@ service -->
                 </div>
             </div>
             <div class="col-md-4 mt-30">
-                <div class="feature-box f-style-2 icon-grad h-100" style="background-image:linear-gradient(to bottom, rgba(0, 0, 0, 0.455), rgba(0, 0, 0, 0)),  url({{ asset('frontend/images/categories/serre.jpg') }}); background-position: center; background-repeat: no-repeat; background-size: cover; color: #fff !important;">
+                <div class="feature-box f-style-2 icon-grad h-100" width="100" height="100"  style="background-image:linear-gradient(to bottom, rgba(0, 0, 0, 0.455), rgba(0, 0, 0, 0)),  url({{ asset('frontend/images/categories/serre.webp') }}); background-position: center; background-repeat: no-repeat; background-size: cover; color: #fff !important;">
                     <div class="feature-box-icon"><i class="ti-save-alt"></i></div>
                     <h3 class="feature-box-title" style="color: #fff;">Pole Agrotech</h3>
                     <p class="feature-box-desc">Matériel de conditionnement, Solution de valorisation agricole, valorisation et d'emballage agro-alimentaire, Matériel agricole, produit agro-alimentaire, serres.... </p>
@@ -133,7 +133,7 @@ service -->
                 </div>
             </div>
             <div class="col-md-4 mt-30">
-                <div class="feature-box f-style-2 icon-grad h-100" style="background-image:linear-gradient(to bottom, rgba(0, 0, 0, 0.455), rgba(0, 0, 0, 0)),  url({{ asset('frontend/images/categories/industrie.jpg') }}); background-position: center; background-repeat: no-repeat; background-size: cover; color: #fff !important;">
+                <div class="feature-box f-style-2 icon-grad h-100" width="100" height="100"  style="background-image:linear-gradient(to bottom, rgba(0, 0, 0, 0.455), rgba(0, 0, 0, 0)),  url({{ asset('frontend/images/categories/industrie.webp') }}); background-position: center; background-repeat: no-repeat; background-size: cover; color: #fff !important;">
                     <div class="feature-box-icon"><i class="ti-ruler-pencil"></i></div>
                     <h3 class="feature-box-title" style="color: #fff;">Pole Industrie</h3>
                     <p class="feature-box-desc">Machine industriel, Solutions de manutention o solutions de stockage </p>
@@ -141,7 +141,7 @@ service -->
                 </div>
             </div>
             <div class="col-md-4 mt-30">
-                <div class="feature-box f-style-2 icon-grad h-100" style="background-image:linear-gradient(to bottom, rgba(0, 0, 0, 0.455), rgba(0, 0, 0, 0)),  url({{ asset('frontend/images/categories/ing.jpg') }}); background-position: center; background-repeat: no-repeat; background-size: cover; color: #fff !important;">
+                <div class="feature-box f-style-2 icon-grad h-100" width="100" height="100"  style="background-image:linear-gradient(to bottom, rgba(0, 0, 0, 0.455), rgba(0, 0, 0, 0)),  url({{ asset('frontend/images/categories/ing.webp') }}); background-position: center; background-repeat: no-repeat; background-size: cover; color: #fff !important;">
                     <div class="feature-box-icon"><i class="ti-agenda"></i></div>
                     <h3 class="feature-box-title" style="color: #fff;">Pole Ingénus</h3>
                     <p class="feature-box-desc">Ingénierie, conception et Modélisation des systèmes industriels, Etude, conception et modelisation</p>
@@ -177,7 +177,7 @@ portfolio -->
                                     <img src="{{ asset('assets/uploads/references/images/'.$item->image) }}" style="width: 90%" alt="">
                                 </div>
                                 <div class="portfolio-card-footer">
-                                    <a class="full-screen" href="{{ asset('assets/uploads/references/images/'.$item->image) }}" data-glightbox="" data-gallery="portfolio"><i class="ti-fullscreen"></i></a>
+                                    <a class="full-screen" width="100" height="100"  href="{{ asset('assets/uploads/references/images/'.$item->image) }}" data-glightbox="" data-gallery="portfolio"><i class="ti-fullscreen"></i></a>
                                     <h6 class="info-title"><a href="#" title="">{{ $item->title }}</a></h6>
                                 </div>
                             </div>
@@ -210,9 +210,9 @@ client -->
                 <!-- Slider START -->
                 <div class="tiny-slider">
                     <div class="tiny-slider-inner" data-arrow="true" data-dots="false"">
-                        <div class="item" style="width: 50%;"><img src="{{ asset('frontend/images/clients/sbtech.png') }}" style="height: 10vh; width: 65%; object-fit: contain;" alt=""></div>
-                        <div class="item" style="width: 50%;"><img src="{{ asset('frontend/images/clients/swiss.png') }}" style="height: 10vh; width: 65%; object-fit: contain;" alt=""></div>
-                        <div class="item" style="width: 50%;"><img src="{{ asset('frontend/images/clients/vidka.png') }}" style="height: 10vh; width: 65%; object-fit: contain;" alt=""></div>
+                        <div class="item" style="width: 50%;"><img width="100" height="100"  src="{{ asset('frontend/images/clients/sbtech.webp') }}" style="height: 10vh; width: 65%; object-fit: contain;" alt=""></div>
+                        <div class="item" style="width: 50%;"><img width="100" height="100"  src="{{ asset('frontend/images/clients/swiss.webp') }}" style="height: 10vh; width: 65%; object-fit: contain;" alt=""></div>
+                        <div class="item" style="width: 50%;"><img width="100" height="100"  src="{{ asset('frontend/images/clients/vidka.webp') }}" style="height: 10vh; width: 65%; object-fit: contain;" alt=""></div>
                     </div>
                 </div>
             </div>
@@ -228,7 +228,7 @@ why-us -->
     <div class="container">
         <div class="row g-0 rounded overflow-hidden">
             <!--why us left-->
-            <div class="col-lg-6 d-none d-lg-block bg-light" style="background:url({{ asset('frontend/images/categories/commerce.jpg') }}) no-repeat; background-size:cover; background-position: center;">
+            <div class="col-lg-6 d-none d-lg-block bg-light" style="background:url({{ asset('frontend/images/categories/commerce.webp') }}) no-repeat; background-size:cover; background-position: center;">
             </div>
             <!--why us right-->
             <div class="col-md-6" style="padding-left: 1em;">
