@@ -6,7 +6,7 @@
 		<div class="container">
 			<div class="row all-text-white">
 				<div class="col-md-12 align-self-center">
-					<h6 class="display-6 fw-bold mt-9 mb-0">Appelez-nous au (+212)5 28 32 07 35</h6>
+					<h6 class="display-6 fw-bold mt-9 mb-0">Appelez-nous au (+212)5 28 23 23 29</h6>
 					<h1 class="fw-bold display-1 mb-2 mb-md-n4">Contactez-nous!</h1>
 				</div>
 			</div>
@@ -46,7 +46,7 @@
 						<div class="all-text-white">
 							<div class="fs-4"><i class="ti-panel"></i></div>
 							<h5 class="mb-2">Phone</h5>
-							<p class="mb-0">(+212)5 28 32 07 35<br>(+212)6 61 93 78 04</p>
+							<p class="mb-0">(+212)5 28 23 23 29<br>(+212)6 61 93 78 04</p>
 						</div>
 					</div>
 				</div>
