@@ -173,7 +173,7 @@ portfolio -->
                     @foreach ($references as $item)
                         <div class="portfolio-card isotope-item digital">
                             <div class="portfolio-card-body">
-                                <div class="portfolio-card-header" style="height: 35vh;">
+                                <div class="portfolio-card-header" style="height: auto;">
                                     <img src="{{ asset('assets/uploads/references/images/'.$item->image) }}" style="width: 90%" alt="">
                                 </div>
                                 <div class="portfolio-card-footer">
